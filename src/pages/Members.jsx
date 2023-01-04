@@ -21,7 +21,7 @@ function FeaturesBlocks() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab]);
   return (
-    <section className="relative bg-[#111827] " id="research">
+    <section className="relative bg-[#111827] ">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-bg-[#1e293b] pointer-events-none"
@@ -290,8 +290,8 @@ function FeaturesBlocks() {
       </div>
       <div className=" mb-24 text-center">
         <a
-          href="/research"
           className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl"
+          href="#0"
         >
           More
         </a>
