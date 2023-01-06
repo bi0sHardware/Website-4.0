@@ -4,6 +4,18 @@ import Transition from "../utils/Transition";
 import FeaturesBg from "../images/features-bg.png";
 import FeaturesElement from "../images/features-element.png";
 
+import Header from "../partials/Header";
+import HeroHome from "../partials/HeroHome";
+import FeaturesHome from "../partials/Features";
+
+import Testimonials from "../partials/Testimonials";
+import Newsletter from "../partials/Newsletter";
+import Footer from "../partials/Footer";
+import Banner from "../partials/Banner";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { MdMessage } from "react-icons/md";
+
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
 
@@ -21,485 +33,422 @@ function FeaturesBlocks() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab]);
   return (
-    <section className="relative bg-[#111827] ">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div
-        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-bg-[#1e293b] pointer-events-none"
-        aria-hidden="true"
-      ></div>
-      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2"></div>
+    <div className="flex flex-col min-h-screen overflow-hidden">
+      {/*  Site header */}
+      <Header />
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-10 md:py-12">
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center mt-12 pb-8 md:pb-8">
-            <h2 className="h2 mb-4 text-white">Our Fields of Research</h2>
-            <p className="text-xl text-white ">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-              cupidatat.
-            </p>
-          </div>
+      {/*  Page content */}
+      <main className="flex-grow">
+        {/*  Page sections */}
 
-          {/* Items */}
-          <div className=" mt-0 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
-            {/* 1st item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
+        <section className="relative bg-[#111827] text-white  w-screen">
+          {/* Section background (needs .relative class on parent and next sibling elements) */}
+          <div
+            className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-bg-[#1e293b] pointer-events-none"
+            aria-hidden="true"
+          ></div>
+          <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2"></div>
+
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="py-10 md:py-12">
+              {/* Section header */}
+              <div className="max-w-3xl mx-auto text-center   mt-12 pb-8 md:pb-8">
+                <h2 className="h2 mb-4 text-white text-4xl  ml-4">Our Team</h2>
+
+                <h2 className="h2 mb-4 text-white text-3xl text-center ml-4 ">
+                  Founder and Chief Mentor
+                </h2>
+                <div className="flex flex-row">
+                  <div
+                    className=" ml-16 text-2xl  font-bold md:ml-10  w-1/2 object-center mt-24   "
+                    data-aos="fade-right"
+                  >
+                    <img
+                      src="src/images/vipinsir.jpeg"
+                      className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4"
+                    />
+                  </div>
+                  <div className="ml-48 w-1/2">
+                    <h2 className=" ml-8 text-2xl  text-right font-bold  text-gray-300">
+                      Th3_M3nt0r
+                    </h2>
+                    <h3 className="text-white text-2xl text-right font-bold mt-2">
+                      VIPIN PAVITHRAN
+                    </h3>
+                    <p className=" mt-4 text-right text-gray-300  ">
+                      Vipin Pavithran is a cyber-security veteran and takes deep
+                      passion in mentoring students at Amrita Vishwa
+                      Vidyapeetham. Prior to coming to Amritapuri, he has worked
+                      for over 10 years in the software industry in the USA &
+                      UK. Being passionate about helping students to develop
+                      their talent and to make them reach their potential, he
+                      founded the internationally recognised student clubs -
+                      amFOSS, Team bi0s and Team Shakti, and today mentors over
+                      300 engineering students directly through these clubs.
+                      team bi0s was amongst India's first CTF team when it was
+                      formed in 2007, and it was this team that founded the
+                      InCTF in 2010, which was the first-ever CTF contest to be
+                      organized in India.
+                    </p>
+                    <div className="flex flex-row gap-4 mt-8 text-2xl ">
+                      <BsTwitter />
+                      <BsLinkedin />
+                      <MdMessage />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h2 className="h2 mt-24 text-center text-white text-3xl ml-4">
+                  Co-Founders
+                </h2>
+              </div>
+              {/* Items */}
+              <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+                {/* 1st item */}
+                <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                  <img
+                    src="src/images/ashwinnambiar.jpeg"
+                    className="h-72 rounded"
                   />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M34.514 35.429l2.057 2.285h8M20.571 26.286h5.715l2.057 2.285"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M20.571 37.714h5.715L36.57 26.286h8"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      strokeLinecap="square"
-                      d="M41.143 34.286l3.428 3.428-3.428 3.429"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      strokeLinecap="square"
-                      d="M41.143 29.714l3.428-3.428-3.428-3.429"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Embedded Systems
-              </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
+                  <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                    ASHWIN NAMBIAR
+                  </h4>
+                  <p className="text-gray-600 text-center">
+                    PhD at Purdue University
+                  </p>
+                </div>
 
-            {/* 2nd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
+                {/* 2nd item */}
+                <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                  <img
+                    src="src/images/hariprasad.jpeg"
+                    className="h-72 rounded"
                   />
-                  <g strokeWidth="2" transform="translate(19.429 20.571)">
-                    <circle
-                      className="stroke-current text-white"
-                      strokeLinecap="square"
-                      cx="12.571"
-                      cy="12.571"
-                      r="1.143"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M19.153 23.267c3.59-2.213 5.99-6.169 5.99-10.696C25.143 5.63 19.514 0 12.57 0 5.63 0 0 5.629 0 12.571c0 4.527 2.4 8.483 5.99 10.696"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M16.161 18.406a6.848 6.848 0 003.268-5.835 6.857 6.857 0 00-6.858-6.857 6.857 6.857 0 00-6.857 6.857 6.848 6.848 0 003.268 5.835"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                OT Security
-              </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
+                  <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                    HARIPRASAD K V
+                  </h4>
+                  <p className="text-gray-600 text-center">
+                    Senior Researcher at Payatu
+                  </p>
+                </div>
 
-            {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeLinecap="square" strokeWidth="2">
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M38.826 22.504a9.128 9.128 0 00-13.291-.398M35.403 25.546a4.543 4.543 0 00-6.635-.207"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M19.429 25.143A6.857 6.857 0 0126.286 32v1.189L28 37.143l-1.714.571V40A2.286 2.286 0 0124 42.286h-2.286v2.285M44.571 25.143A6.857 6.857 0 0037.714 32v1.189L36 37.143l1.714.571V40A2.286 2.286 0 0040 42.286h2.286v2.285"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Wireless Security
-              </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+                {/* 3rd item */}
+                <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                  <img src="src/images/season.jpeg" className="h-72 rounded" />
+                  <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                    SEASON CHERIAN
+                  </h4>
+                  <p className="text-gray-600 text-center">
+                    Cyber Security Consultant
+                  </p>
+                </div>
+              </div>
             </div>
-
-            {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g transform="translate(22.857 19.429)" strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      strokeLinecap="square"
-                      d="M12.571 4.571V0H0v25.143h12.571V20.57"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M16 12.571h8"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      strokeLinecap="square"
-                      d="M19.429 8L24 12.571l-4.571 4.572"
-                    />
-                    <circle
-                      className="stroke-current text-blue-300"
-                      strokeLinecap="square"
-                      cx="12.571"
-                      cy="12.571"
-                      r="3.429"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Firmware Analysis
-              </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeLinecap="square" strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      d="M20.571 20.571h13.714v17.143H20.571z"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M38.858 26.993l6.397 1.73-4.473 16.549-13.24-3.58"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Automotive Security
-              </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            {/* 6th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M32 37.714a5.714 5.714 0 015.714 5.715 5.714 5.714 0 015.715-5.715M20.571 26.286a5.714 5.714 0 005.715-5.715A5.714 5.714 0 0032 26.286"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M20.571 26.286A5.714 5.714 0 0126.286 32 5.714 5.714 0 0132 26.286"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572"
-                      strokeLinecap="square"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Micro-Architectural Attacks
-              </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className=" mb-24 text-center">
-        <a
-          className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl"
-          href="#0"
-        >
-          More
-        </a>
-      </div>
-      <div className="md:grid md:grid-cols-12 md:gap-6 text-white ml-16">
-        <div
-          className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
-          data-aos="fade-right"
-        >
-          <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8 text-gray-400">
-            <h3 className="h3 mb-3">Powerful suite of tools</h3>
-            <p className="text-md text-white">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa.
-            </p>
-          </div>
-          <a
-            className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-              tab !== 2
-                ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                : "bg-gray-200 border-transparent"
-            }`}
-            href="#0"
-            onClick={(e) => {
-              e.preventDefault();
-              setTab(1);
-            }}
-          >
             <div>
-              <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
-                Building the Simple ecosystem
+              <h2 className="h2 mt-24 text-center text-white text-3xl ml-4">
+                Mentors
+              </h2>
+            </div>
+            <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+              {/* 2nd item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/season.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SEASON CHERIAN
+                </h4>
+                <p className="text-gray-600 text-center">OT Security</p>
               </div>
-              <div className="text-gray-600">
-                Take collaboration to the next level with security and
-                administrative features built for teams.
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/viveknj.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  VIVEK N J
+                </h4>
+                <p className="text-gray-600 text-center">Firmware Analysis</p>
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-              <svg
-                className="w-3 h-3 fill-current"
-                viewBox="0 0 12 12"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-              </svg>
-            </div>
-          </a>
-          <a
-            className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-              tab !== 2
-                ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                : "bg-gray-200 border-transparent"
-            }`}
-            href="#0"
-            onClick={(e) => {
-              e.preventDefault();
-              setTab(1);
-            }}
-          >
             <div>
-              <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
-                Building the Simple ecosystem
+              <h2 className="h2 mt-24 text-center text-white text-3xl ml-4">
+                STUDENT MEMBERS
+              </h2>
+              <h2 className="h2 mt-8 text-white text-xl ml-4">Fourth Years</h2>
+            </div>
+            <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+              {/* 2nd item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/aswinc.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  ASWIN C
+                </h4>
+                <p className="text-gray-600 text-center">Firmware Analysis</p>
               </div>
-              <div className="text-gray-600">
-                Take collaboration to the next level with security and
-                administrative features built for teams.
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/athul.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  ATHUL MENON
+                </h4>
+                <p className="text-gray-600 text-center">Firmware Analysis</p>
+              </div>
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/indraraj.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  INDRARAJ BISWAS
+                </h4>
+                <p className="text-gray-600 text-center">Wireless Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/nidhin.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  NIDHIN NAUSHAD
+                </h4>
+                <p className="text-gray-600 text-center">Embedded Devlopment</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/ranit.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  RANIT PRADHAN
+                </h4>
+                <p className="text-gray-600 text-center">Embedded Devlopment</p>
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-              <svg
-                className="w-3 h-3 fill-current"
-                viewBox="0 0 12 12"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-              </svg>
-            </div>
-          </a>
-          <a
-            className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-              tab !== 2
-                ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                : "bg-gray-200 border-transparent"
-            }`}
-            href="#0"
-            onClick={(e) => {
-              e.preventDefault();
-              setTab(1);
-            }}
-          >
             <div>
-              <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
-                Building the Simple ecosystem
+              <h2 className="h2 mt-8  text-white text-xl ml-4">Third Years</h2>
+            </div>
+            <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+              {/* 2nd item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img
+                  src="src/images/sreesankar1.jpeg"
+                  className="h-72 rounded"
+                />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SREESANKAR S
+                </h4>
+                <p className="text-gray-600 text-center">Hardware Security</p>
               </div>
-              <div className="text-gray-600">
-                Take collaboration to the next level with security and
-                administrative features built for teams.
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/hridul.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  NARIKODAN HRIDUL
+                </h4>
+                <p className="text-gray-600 text-center">Hardware Security</p>
+              </div>
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/ghanshyam.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  GHAN SHYAM
+                </h4>
+                <p className="text-gray-600 text-center">Hardware Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/kiran.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  KIRAN S P
+                </h4>
+                <p className="text-gray-600 text-center">Wireless Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/gauthamjb.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  GAUTHAM J B
+                </h4>
+                <p className="text-gray-600 text-center">Wireless Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/archit.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  ARCHIT KAK
+                </h4>
+                <p className="text-gray-600 text-center">Automotive Security</p>
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-              <svg
-                className="w-3 h-3 fill-current"
-                viewBox="0 0 12 12"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-              </svg>
+            <div>
+              <h2 className="h2 mt-8  text-white text-xl ml-4">Second Years</h2>
             </div>
-          </a>
-        </div>
-        <div
-          className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
-          data-aos="zoom-y-out"
-          ref={tabs}
-        >
-          <div className="relative flex flex-col text-center lg:text-right">
-            <Transition
-              show={tab === 1}
-              appear={true}
-              className="w-full"
-              enter="transition ease-in-out duration-700 transform order-first"
-              enterStart="opacity-0 translate-y-16"
-              enterEnd="opacity-100 translate-y-0"
-              leave="transition ease-in-out duration-300 transform absolute"
-              leaveStart="opacity-100 translate-y-0"
-              leaveEnd="opacity-0 -translate-y-16"
-            >
-              <div className="relative inline-flex flex-col">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={FeaturesBg}
-                  width="500"
-                  height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                  src={FeaturesElement}
-                  width="500"
-                  height="44"
-                  alt="Element"
-                  style={{ top: "30%" }}
-                />
+            <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+              {/* 2nd item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/satysai.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SATYA SAI N
+                </h4>
+                <p className="text-gray-600 text-center">Web Security</p>
               </div>
-            </Transition>
-            <Transition
-              show={tab === 2}
-              appear={true}
-              className="w-full"
-              enter="transition ease-in-out duration-700 transform order-first"
-              enterStart="opacity-0 translate-y-16"
-              enterEnd="opacity-100 translate-y-0"
-              leave="transition ease-in-out duration-300 transform absolute"
-              leaveStart="opacity-100 translate-y-0"
-              leaveEnd="opacity-0 -translate-y-16"
-            >
-              <div className="relative inline-flex flex-col">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={FeaturesBg}
-                  width="500"
-                  height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                  src={FeaturesElement}
-                  width="500"
-                  height="44"
-                  alt="Element"
-                  style={{ top: "30%" }}
-                />
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/siddharth.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SIDDHARTH REDDY
+                </h4>
+                <p className="text-gray-600 text-center">Web Security</p>
               </div>
-            </Transition>
-            <Transition
-              show={tab === 3}
-              appear={true}
-              className="w-full"
-              enter="transition ease-in-out duration-700 transform order-first"
-              enterStart="opacity-0 translate-y-16"
-              enterEnd="opacity-100 translate-y-0"
-              leave="transition ease-in-out duration-300 transform absolute"
-              leaveStart="opacity-100 translate-y-0"
-              leaveEnd="opacity-0 -translate-y-16"
-            >
-              <div className="relative inline-flex flex-col">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={FeaturesBg}
-                  width="500"
-                  height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                  src={FeaturesElement}
-                  width="500"
-                  height="44"
-                  alt="Element"
-                  style={{ top: "30%" }}
-                />
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/govind.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  GOVIND
+                </h4>
+                <p className="text-gray-600 text-center">Firmware Analysis</p>
               </div>
-            </Transition>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/karthik.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  KARTHIK G
+                </h4>
+                <p className="text-gray-600 text-center">Firmware Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/rajask.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  RAJA S K
+                </h4>
+                <p className="text-gray-600 text-center">Hardware Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/nived.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  NIVED P V
+                </h4>
+                <p className="text-gray-600 text-center">Hardware Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/drupad.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  DRUPAD DEV
+                </h4>
+                <p className="text-gray-600 text-center">Automotive Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/avanthika.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  AVANTHIKA RAJESH
+                </h4>
+                <p className="text-gray-600 text-center">OT Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/swetha.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SWETHA AJITH
+                </h4>
+                <p className="text-gray-600 text-center">Wireless Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/roopa.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  ROOPA RAVALI
+                </h4>
+                <p className="text-gray-600 text-center">Wireless Security</p>
+              </div>
+            </div>
+            <div>
+              <h2 className="h2 mt-24 text-center text-white text-3xl ml-4">
+                ALUMNI
+              </h2>
+            </div>
+            <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mb-24">
+              {/* 2nd item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img
+                  src="src/images/ashwinnambiar.jpeg"
+                  className="h-72 rounded"
+                />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  ASHWIN NAMBIAR
+                </h4>
+                <p className="text-gray-600 text-center">Hardware Security</p>
+                <p className="text-gray-600 text-center">
+                  Microarchitectural Attacks
+                </p>
+              </div>
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/season.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SEASON CHERIAN
+                </h4>
+                <p className="text-gray-600 text-center">OT Security</p>
+                <p className="text-gray-600 text-center">Wireless Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img
+                  src="src/images/hariprasad.jpeg"
+                  className="h-72 rounded"
+                />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  HARIPRASAD
+                </h4>
+                <p className="text-gray-600 text-center">Firmware Analysis</p>
+                <p className="text-gray-600 text-center">Hardware Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/hari.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  HARI
+                </h4>
+                <p className="text-gray-600 text-center">Embedded Devlopment</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img
+                  src="src/images/karthiklade.jpeg"
+                  className="h-72 rounded"
+                />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  KARTHEEK LADE
+                </h4>
+                <p className="text-gray-600 text-center">Automotive Security</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/aathira.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  AATHIRA DINESAN
+                </h4>
+                <p className="text-gray-600 text-center">A.I./M.L.</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/arya.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  ARYA SURENDRAN
+                </h4>
+                <p className="text-gray-600 text-center">Embedded Devlopment</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/amitha.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  AMITHA DEEP
+                </h4>
+                <p className="text-gray-600 text-center">Embedded Devlopment</p>
+              </div>
+              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <img src="src/images/keerthana.jpeg" className="h-72 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  KEERTHANA K M
+                </h4>
+                <p className="text-gray-600 text-center">Automotive Security</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+
+          <div className="md:grid md:grid-cols-12 md:gap-6 text-white ml-16">
+            <div
+              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
+              data-aos="zoom-y-out"
+              ref={tabs}
+            ></div>
+          </div>
+        </section>
+      </main>
+
+      <Banner />
+
+      {/*  Site footer */}
+      <Footer />
+    </div>
   );
 }
 
