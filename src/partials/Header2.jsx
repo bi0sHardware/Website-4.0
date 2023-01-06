@@ -24,7 +24,7 @@ function Header() {
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
-            <a href="#">
+            <a href="/">
               <img src="src/images/bios.png" className="w-28" />
             </a>
           </div>
@@ -34,7 +34,7 @@ function Header() {
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <a
-                  href="#about"
+                  href="/about"
                   className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110"
                 >
                   About
@@ -42,7 +42,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  href="#research"
+                  href="/research"
                   className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110"
                 >
                   Research

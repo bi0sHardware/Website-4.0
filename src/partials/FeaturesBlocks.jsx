@@ -291,14 +291,14 @@ function FeaturesBlocks() {
       <div className=" mb-24 text-center">
         <a
           href="/research"
-          className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl"
+          className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"
         >
           More
         </a>
       </div>
       <div className="md:grid md:grid-cols-12 md:gap-6 text-white ml-16">
         <div
-          className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+          className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 mb-24"
           data-aos="fade-right"
         >
           <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8 text-gray-400">

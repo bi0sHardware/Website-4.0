@@ -3,7 +3,7 @@ import Transition from "../utils/Transition";
 
 import FeaturesBg from "../images/features-bg.png";
 import FeaturesElement from "../images/features-element.png";
-import Header from "../partials/Header";
+import Header2 from "../partials/Header2";
 import HeroHome from "../partials/HeroHome";
 import FeaturesHome from "../partials/Features";
 import FeaturesBlocks from "../partials/FeaturesBlocks";
@@ -32,7 +32,7 @@ function Features() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
-      <Header />
+      <Header2 />
       {/*  Page content */}
       <main className="flex-grow">
         <section className="relative bg-[#111827] text-white ">
@@ -181,16 +181,14 @@ function Features() {
                 </div>
               </div>
             </div>
-            <div className="max-w-3xl  pb-10 md:pb-16 mt-28 ml-28  transition ease-in-out delay-150 hover:scale-110 duration-300">
+            <div className="max-w-3xl  pb-10 md:pb-16 mt-28 ml-28  transition ease-in-out delay-150 hover:scale-110   duration-300">
               <div
-                className={` text-center text-lg p-5 rounded  transition duration-300 ease-in-out mb-3 ${
-                  tab !== 2
-                    ? "bg-[#111827]  "
-                    : "bg-gray-200 border-transparent"
-                }`}
+                data-aos="fade-right"
+                className=" text-center text-lg p-6 rounded  transition duration-700 ease-in-out mb-3 hover:shadow-md  hover:bg-gray-300 hover:text-[#111827] border-2 border-double border-white 
+              "
               >
-                <h1 className="h2 mb-4 text-center">How we function?</h1>
-                <p className="text-lg text-white ml-16">
+                <h1 className="h2 mb-4 text-center mt-4 ">How we function?</h1>
+                <p className="text-lg  text-center mb-4">
                   The team functions as a family, and uses a mentor mentee model
                   wherein senior students train and pass on experience & skills
                   they gained to their junior mentees. This happens through out
@@ -206,12 +204,12 @@ function Features() {
                 Here are some of the things our members do:
                 <div className="md:grid md:grid-cols-4 md:gap-6 text-white ml-16">
                   <div
-                    className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+                    className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 md:mt-6"
                     data-aos="fade-right"
                   >
                     <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8 text-gray-400 "></div>
                     <a
-                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-3 ${
+                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-5 ${
                         tab !== 2
                           ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
@@ -223,12 +221,12 @@ function Features() {
                       }}
                     >
                       <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
+                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Learning & Researching on various Cyber Security
                           fields
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
                         <svg
                           className="w-3 h-3 fill-current"
                           viewBox="0 0 12 12"
@@ -239,7 +237,7 @@ function Features() {
                       </div>
                     </a>
                     <a
-                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-3 ${
+                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-5 ${
                         tab !== 2
                           ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
@@ -251,11 +249,11 @@ function Features() {
                       }}
                     >
                       <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
+                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Participating & organizing CTFs across the world
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
                         <svg
                           className="w-3 h-3 fill-current"
                           viewBox="0 0 12 12"
@@ -266,7 +264,7 @@ function Features() {
                       </div>
                     </a>
                     <a
-                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-3 ${
+                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-5 ${
                         tab !== 2
                           ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
@@ -278,11 +276,11 @@ function Features() {
                       }}
                     >
                       <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
+                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Organizing workshops & training programmes
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
                         <svg
                           className="w-3 h-3 fill-current"
                           viewBox="0 0 12 12"
@@ -293,7 +291,7 @@ function Features() {
                       </div>
                     </a>
                     <a
-                      className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-3 ${
+                      className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
                         tab !== 2
                           ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
@@ -305,11 +303,11 @@ function Features() {
                       }}
                     >
                       <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
+                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Contributing to open-source security tools
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
                         <svg
                           className="w-3 h-3 fill-current"
                           viewBox="0 0 12 12"
@@ -320,7 +318,7 @@ function Features() {
                       </div>
                     </a>
                     <a
-                      className={`flex items-center text-lg p-5  hover:scale-110 rounded border transition duration-300 ease-in-out mb-3 ${
+                      className={`flex items-center text-lg p-5  hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
                         tab !== 2
                           ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
@@ -332,12 +330,12 @@ function Features() {
                       }}
                     >
                       <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
+                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Collaborating in international cyber-security research
                           projects
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
                         <svg
                           className="w-3 h-3 fill-current"
                           viewBox="0 0 12 12"
@@ -348,7 +346,7 @@ function Features() {
                       </div>
                     </a>
                     <a
-                      className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-3 ${
+                      className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
                         tab !== 2
                           ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
@@ -360,12 +358,12 @@ function Features() {
                       }}
                     >
                       <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
+                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Penetration testing, bug-bounty hunting & submitting
                           CVEs
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
                         <svg
                           className="w-3 h-3 fill-current"
                           viewBox="0 0 12 12"
@@ -376,7 +374,7 @@ function Features() {
                       </div>
                     </a>
                     <a
-                      className={`flex items-center text-lg p-5 rounded hover:scale-110 border transition duration-300 ease-in-out mb-3 ${
+                      className={`flex items-center text-lg p-5 rounded hover:scale-110 border transition duration-300 ease-in-out mb-5 ${
                         tab !== 2
                           ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
@@ -388,11 +386,11 @@ function Features() {
                       }}
                     >
                       <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
+                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Providing Cyber Security Consultancy Services
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
                         <svg
                           className="w-3 h-3 fill-current"
                           viewBox="0 0 12 12"

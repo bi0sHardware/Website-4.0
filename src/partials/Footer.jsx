@@ -9,14 +9,14 @@ function Footer() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+        <div className="flex flex-row border-t border-gray-200">
           {/* 1st block */}
-          <div className="sm:col-span-12 lg:col-span-3">
+          <div className="sm:col-span-4 lg:col-span-4 w-28">
             <div className="mb-2">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="Cruip">
                 <a>
-                  <img src="src/images/bios.png" className="w-28" />
+                  <img src="src/images/bios.png" className="h-24" />
                 </a>
               </Link>
             </div>
@@ -29,14 +29,14 @@ function Footer() {
           {/* 4th block */}
 
           {/* 5th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-8 flex flex-row ">
+          <div className="sm:col-span-8 md:col-span-8 lg:col-span-6 mt-10 flex flex-row  ">
             <div>
               <p className="text-sm text-gray-400 mb-4 ">
                 © Team bi0s Hardware 2023. All rights reserved.
               </p>
             </div>
-            <div>
-              <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0 ">
+            <div className="">
+              <ul className="flex  mb-4 md:order-1 md:ml-4 md:mb-0 ml-24 ">
                 <li>
                   <Link
                     to="#"

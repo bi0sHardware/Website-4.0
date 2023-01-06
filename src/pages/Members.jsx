@@ -4,7 +4,7 @@ import Transition from "../utils/Transition";
 import FeaturesBg from "../images/features-bg.png";
 import FeaturesElement from "../images/features-element.png";
 
-import Header from "../partials/Header";
+import Header2 from "../partials/Header2";
 import HeroHome from "../partials/HeroHome";
 import FeaturesHome from "../partials/Features";
 
@@ -35,7 +35,7 @@ function FeaturesBlocks() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
-      <Header />
+      <Header2 />
 
       {/*  Page content */}
       <main className="flex-grow">
@@ -58,7 +58,7 @@ function FeaturesBlocks() {
                 <h2 className="h2 mb-4 text-white text-3xl text-center ml-4 ">
                   Founder and Chief Mentor
                 </h2>
-                <div className="flex flex-row">
+                <div className="flex md:flex-row">
                   <div
                     className=" ml-16 text-2xl  font-bold md:ml-10  w-1/2 object-center mt-24   "
                     data-aos="fade-right"
@@ -68,7 +68,7 @@ function FeaturesBlocks() {
                       className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4"
                     />
                   </div>
-                  <div className="ml-48 w-1/2">
+                  <div className=" w-1/2">
                     <h2 className=" ml-8 text-2xl  text-right font-bold  text-gray-300">
                       Th3_M3nt0r
                     </h2>
@@ -90,7 +90,7 @@ function FeaturesBlocks() {
                       InCTF in 2010, which was the first-ever CTF contest to be
                       organized in India.
                     </p>
-                    <div className="flex flex-row gap-4 mt-8 text-2xl ">
+                    <div className="flex flex-row gap-4 mt-8 text-4xl ">
                       <BsTwitter />
                       <BsLinkedin />
                       <MdMessage />
@@ -107,10 +107,13 @@ function FeaturesBlocks() {
               {/* Items */}
               <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
                 {/* 1st item */}
-                <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <div
+                  className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2 "
+                  data-aos="fade-down"
+                >
                   <img
                     src="src/images/ashwinnambiar.jpeg"
-                    className="h-72 rounded"
+                    className="h-64 rounded"
                   />
                   <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                     ASHWIN NAMBIAR
@@ -121,10 +124,13 @@ function FeaturesBlocks() {
                 </div>
 
                 {/* 2nd item */}
-                <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+                <div
+                  className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                  data-aos="fade-down"
+                >
                   <img
                     src="src/images/hariprasad.jpeg"
-                    className="h-72 rounded"
+                    className="h-64 rounded"
                   />
                   <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                     HARIPRASAD K V
@@ -135,8 +141,11 @@ function FeaturesBlocks() {
                 </div>
 
                 {/* 3rd item */}
-                <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                  <img src="src/images/season.jpeg" className="h-72 rounded" />
+                <div
+                  className="relative flex flex-col items-center p-5 rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                  data-aos="fade-down"
+                >
+                  <img src="src/images/season.jpeg" className="h-64 rounded" />
                   <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                     SEASON CHERIAN
                   </h4>
@@ -153,16 +162,22 @@ function FeaturesBlocks() {
             </div>
             <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
               {/* 2nd item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/season.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/season.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SEASON CHERIAN
                 </h4>
                 <p className="text-gray-600 text-center">OT Security</p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/viveknj.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/viveknj.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   VIVEK N J
                 </h4>
@@ -177,38 +192,53 @@ function FeaturesBlocks() {
             </div>
             <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
               {/* 2nd item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/aswinc.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/aswinc.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ASWIN C
                 </h4>
                 <p className="text-gray-600 text-center">Firmware Analysis</p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/athul.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/athul.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ATHUL MENON
                 </h4>
                 <p className="text-gray-600 text-center">Firmware Analysis</p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/indraraj.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/indraraj.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   INDRARAJ BISWAS
                 </h4>
                 <p className="text-gray-600 text-center">Wireless Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/nidhin.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/nidhin.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   NIDHIN NAUSHAD
                 </h4>
                 <p className="text-gray-600 text-center">Embedded Devlopment</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/ranit.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/ranit.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   RANIT PRADHAN
                 </h4>
@@ -220,10 +250,13 @@ function FeaturesBlocks() {
             </div>
             <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
               {/* 2nd item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
                 <img
                   src="src/images/sreesankar1.jpeg"
-                  className="h-72 rounded"
+                  className="h-64 rounded"
                 />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SREESANKAR S
@@ -231,37 +264,52 @@ function FeaturesBlocks() {
                 <p className="text-gray-600 text-center">Hardware Security</p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/hridul.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/hridul.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   NARIKODAN HRIDUL
                 </h4>
                 <p className="text-gray-600 text-center">Hardware Security</p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/ghanshyam.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/ghanshyam.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   GHAN SHYAM
                 </h4>
                 <p className="text-gray-600 text-center">Hardware Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/kiran.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/kiran.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KIRAN S P
                 </h4>
                 <p className="text-gray-600 text-center">Wireless Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/gauthamjb.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/gauthamjb.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   GAUTHAM J B
                 </h4>
                 <p className="text-gray-600 text-center">Wireless Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/archit.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/archit.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ARCHIT KAK
                 </h4>
@@ -273,73 +321,103 @@ function FeaturesBlocks() {
             </div>
             <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
               {/* 2nd item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/satysai.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/satysai.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SATYA SAI N
                 </h4>
                 <p className="text-gray-600 text-center">Web Security</p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/siddharth.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/siddharth.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SIDDHARTH REDDY
                 </h4>
                 <p className="text-gray-600 text-center">Web Security</p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/govind.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/govind.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   GOVIND
                 </h4>
                 <p className="text-gray-600 text-center">Firmware Analysis</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/karthik.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/karthik.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KARTHIK G
                 </h4>
                 <p className="text-gray-600 text-center">Firmware Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/rajask.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/rajask.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   RAJA S K
                 </h4>
                 <p className="text-gray-600 text-center">Hardware Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/nived.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/nived.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   NIVED P V
                 </h4>
                 <p className="text-gray-600 text-center">Hardware Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/drupad.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/drupad.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   DRUPAD DEV
                 </h4>
                 <p className="text-gray-600 text-center">Automotive Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/avanthika.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/avanthika.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   AVANTHIKA RAJESH
                 </h4>
                 <p className="text-gray-600 text-center">OT Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/swetha.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/swetha.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SWETHA AJITH
                 </h4>
                 <p className="text-gray-600 text-center">Wireless Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/roopa.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/roopa.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ROOPA RAVALI
                 </h4>
@@ -351,12 +429,18 @@ function FeaturesBlocks() {
                 ALUMNI
               </h2>
             </div>
-            <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mb-24">
+            <div
+              className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mb-24"
+              data-aos="fade-down"
+            >
               {/* 2nd item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
                 <img
                   src="src/images/ashwinnambiar.jpeg"
-                  className="h-72 rounded"
+                  className="h-64 rounded"
                 />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ASHWIN NAMBIAR
@@ -367,18 +451,24 @@ function FeaturesBlocks() {
                 </p>
               </div>
               {/* 1st item */}
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/season.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/season.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SEASON CHERIAN
                 </h4>
                 <p className="text-gray-600 text-center">OT Security</p>
                 <p className="text-gray-600 text-center">Wireless Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
                 <img
                   src="src/images/hariprasad.jpeg"
-                  className="h-72 rounded"
+                  className="h-64 rounded"
                 />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   HARIPRASAD
@@ -386,46 +476,64 @@ function FeaturesBlocks() {
                 <p className="text-gray-600 text-center">Firmware Analysis</p>
                 <p className="text-gray-600 text-center">Hardware Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/hari.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/hari.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   HARI
                 </h4>
                 <p className="text-gray-600 text-center">Embedded Devlopment</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
                 <img
                   src="src/images/karthiklade.jpeg"
-                  className="h-72 rounded"
+                  className="h-64 rounded"
                 />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KARTHEEK LADE
                 </h4>
                 <p className="text-gray-600 text-center">Automotive Security</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/aathira.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/aathira.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   AATHIRA DINESAN
                 </h4>
                 <p className="text-gray-600 text-center">A.I./M.L.</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/arya.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/arya.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ARYA SURENDRAN
                 </h4>
                 <p className="text-gray-600 text-center">Embedded Devlopment</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/amitha.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/amitha.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   AMITHA DEEP
                 </h4>
                 <p className="text-gray-600 text-center">Embedded Devlopment</p>
               </div>
-              <div className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2">
-                <img src="src/images/keerthana.jpeg" className="h-72 rounded" />
+              <div
+                className="relative flex flex-col items-center p-5 rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/keerthana.jpeg" className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KEERTHANA K M
                 </h4>

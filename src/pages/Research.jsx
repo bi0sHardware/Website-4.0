@@ -4,7 +4,7 @@ import Transition from "../utils/Transition";
 import FeaturesBg from "../images/features-bg.png";
 import FeaturesElement from "../images/features-element.png";
 
-import Header from "../partials/Header";
+import Header2 from "../partials/Header2";
 import HeroHome from "../partials/HeroHome";
 import FeaturesHome from "../partials/Features";
 import FeaturesBlocks from "../partials/FeaturesBlocks";
@@ -33,7 +33,7 @@ function Features() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
-      <Header />
+      <Header2 />
 
       {/*  Page content */}
       <main className="flex-grow">
@@ -44,45 +44,139 @@ function Features() {
             aria-hidden="true"
             id="about"
           ></div>
-          <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-[#111827] transform -translate-y-1/2"></div>
+          <div className="absolute left-0 right-0 m-autoz w-px p-px h-20 bg-[#111827] transform -translate-y-1/2"></div>
 
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-12 md:pt-20 flex flex-row  text-left">
               {/* Section header */}
-              <div className=" flex flex-col">
+              <div className=" flex flex-col mr-8">
                 <div className="max-w-3xl text-left pb-10 md:pb-16 mt-28 ">
-                  <h1 className="h2 mb-4">About bi0s Hardware</h1>
-                  <p className="text-lg text-white">
-                    Team bi0s is a cyber-security enthusiast club and research
-                    group from Amrita Vishwa Vidyapeetham (University), India.
-                    The team was formally launched as a CTF team in 2007 under
-                    the mentorship of Vipin Pavithran, a faculty at Amrita's
-                    Centre for Cyber Security. It was among the first CTF team
-                    from India, and ever-since has been spearheading CTFs in the
-                    country - from starting InCTF, India's First CTF and
-                    consistently ranking No.1 in CTFTime since it was
-                    established. Over the years, the team has evolved into a
-                    cyber-security research group, with specialized teams in 10+
-                    cyber-security focus areas.
-                  </p>
+                  <h1 className="h2 mb-4">Our Fields of Research</h1>
                 </div>
-                <div className=" mb-32">
-                  <a
-                    className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl"
-                    href="#0"
+                <div class=" w-full lg:max-w-full lg:flex flex-col gap-8  ">
+                  <div
+                    class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                    data-aos="fade-down"
                   >
-                    More
-                  </a>
+                    <div class="mb-8">
+                      <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                        Embedded Systems
+                      </p>
+
+                      <p class="text-gray-700 text-base">
+                        Embedded systems include a variety of hardware and
+                        software components, which perform specific functions in
+                        host systems, for example, satellites, washing machines,
+                        robots, hand-held telephones and automobiles.
+                      </p>
+                    </div>
+                  </div>
+                  {/* item 2 */}
+                  <div
+                    class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                    data-aos="fade-down"
+                  >
+                    <div class="mb-8">
+                      <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                        Firmware Analysis
+                      </p>
+
+                      <p class="text-gray-700 text-base">
+                        Firmware is the code that runs on an embedded device.In
+                        embedded systems, manufacturers usually go for
+                        functionality over security to decrease manufacturing
+                        cost.We analyze the firmware, to find various security
+                        vulnerabilities present.
+                      </p>
+                    </div>
+                  </div>
+                  {/* item 3 */}
+                  <div
+                    class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                    data-aos="fade-down"
+                  >
+                    <div class="mb-8">
+                      <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                        Wireless Security
+                      </p>
+
+                      <p class="text-gray-700 text-base">
+                        As everything is getting mobile and wireless, the
+                        urgency for effective wireless threat protection is on
+                        everyone's watch, as wireless networks are developed
+                        rapidly making them vulnerable in a myriad of ways.
+                      </p>
+                    </div>
+                  </div>
+                  {/* item 4*/}
+                  <div
+                    class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                    data-aos="fade-down"
+                  >
+                    <div class="mb-8">
+                      <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                        Automotive Security
+                      </p>
+
+                      <p class="text-gray-700 text-base">
+                        With consumers expecting new complex features for their
+                        ride, it's getting difficult for engineers to make
+                        systems that go hand in hand with security and required
+                        technicalities. We look into the extremely complex
+                        systems of vehicle security and make sure that it keeps
+                        up with the new features.
+                      </p>
+                    </div>
+                  </div>
+                  {/* item 5*/}
+                  <div
+                    class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                    data-aos="fade-down"
+                  >
+                    <div class="mb-8">
+                      <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                        O T Security
+                      </p>
+
+                      <p class="text-gray-700 text-base">
+                        SCADA and Industrial Control Systems systems have been
+                        relatively excluded from security testing by the
+                        security industry. This has made them vulnerable and
+                        leading to some successful intrusions that have resulted
+                        in malicious attackers obtaining administrative access
+                        to core systems.
+                      </p>
+                    </div>
+                  </div>
+                  {/* item 6*/}
+                  <div
+                    class="border-r border-b border-l rounded-lg mb-16 border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                    data-aos="fade-down"
+                  >
+                    <div class="mb-8">
+                      <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                        Micro-Architectural Attacks
+                      </p>
+
+                      <p class="text-gray-700 text-base">
+                        A side-channel attack is a security exploit that aims to
+                        gather information from or influence the program
+                        execution of a system by measuring or exploiting
+                        indirect effects of the system or its hardware -- rather
+                        than targeting the program or its code directly.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               {/* Section content */}{" "}
               <div className="md:grid md:grid-cols-8 md:gap-6  mt-24 ">
                 {/* Content */}
                 <div
-                  className=" ml-48 max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+                  className="mr-72 max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
                   data-aos="fade-right "
                 >
-                  <div className="mb-8 md:mb-0">
+                  <div className="mb-8 md:mb-0 ">
                     {/* Tabs items */}
                     <div
                       className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"

@@ -73,7 +73,7 @@ function HeroHome() {
               >
                 <div>
                   <a
-                    className="btn text-white  border-white w-full mb-4 sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl"
+                    className="btn text-white  border-white w-full mb-4 sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"
                     href="#0"
                   >
                     Contact Us
