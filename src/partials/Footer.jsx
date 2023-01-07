@@ -35,7 +35,7 @@ function Footer() {
                 © Team bi0s Hardware 2023. All rights reserved.
               </p>
             </div>
-            <div className="">
+            <div className="md:ml-96">
               <ul className="flex  mb-4 md:order-1 md:ml-4 md:mb-0 ml-24 ">
                 <li>
                   <Link

@@ -19,7 +19,7 @@ function Header() {
         !top && "bg-[#0f172a] backdrop-blur-sm shadow-lg"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 mb-4 mt-2  lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">

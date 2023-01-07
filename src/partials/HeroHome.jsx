@@ -7,7 +7,7 @@ function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
-    <section className="relative bg-[#111827]">
+    <section className="relative bg-[#111827] selection:bg-lime-500">
       {/* Illustration behind hero content */}
       <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
@@ -45,7 +45,7 @@ function HeroHome() {
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
             <h1
-              className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 text-white"
+              className=" text-5xl md:text-6xl font-extrabold  leading-tighter tracking-tighter mb-4 text-white"
               data-aos="zoom-y-out"
             >
               bi0s{" "}

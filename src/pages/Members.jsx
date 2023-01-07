@@ -58,24 +58,24 @@ function FeaturesBlocks() {
                 <h2 className="h2 mb-4 text-white text-3xl text-center ml-4 ">
                   Founder and Chief Mentor
                 </h2>
-                <div className="flex md:flex-row">
+                <div className="flex sm:flex-col   lg:flex-row my-10 ">
                   <div
-                    className=" ml-16 text-2xl  font-bold md:ml-10  w-1/2 object-center mt-24   "
+                    className=" ml-16 text-2xl  font-bold md:ml-10  w-1/2   sm:w-full sm:h-96 sm:object-cover sm:object-center "
                     data-aos="fade-right"
                   >
                     <img
                       src="src/images/vipinsir.jpeg"
-                      className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4"
+                      className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4 "
                     />
                   </div>
                   <div className=" w-1/2">
-                    <h2 className=" ml-8 text-2xl  text-right font-bold  text-gray-300">
+                    <h2 className="  text-2xl  text-left   font-bold  text-gray-300">
                       Th3_M3nt0r
                     </h2>
-                    <h3 className="text-white text-2xl text-right font-bold mt-2">
+                    <h3 className="text-white sm:text-center text-2xl text-left font-bold mt-2">
                       VIPIN PAVITHRAN
                     </h3>
-                    <p className=" mt-4 text-right text-gray-300  ">
+                    <p className=" mt-4 text-left text-gray-300  flex sm:text:center  ">
                       Vipin Pavithran is a cyber-security veteran and takes deep
                       passion in mentoring students at Amrita Vishwa
                       Vidyapeetham. Prior to coming to Amritapuri, he has worked
@@ -90,9 +90,14 @@ function FeaturesBlocks() {
                       InCTF in 2010, which was the first-ever CTF contest to be
                       organized in India.
                     </p>
-                    <div className="flex flex-row gap-4 mt-8 text-4xl ">
-                      <BsTwitter />
-                      <BsLinkedin />
+                    <div className="flex flex-row gap-4 mt-8 text-4xl justify-end">
+                      <a href="https://twitter.com/th3_m3nt0r">
+                        <BsTwitter />
+                      </a>
+                      <a href="https://www.linkedin.com/in/vipinpavithran/">
+                        <BsLinkedin />
+                      </a>
+
                       <MdMessage />
                     </div>
                   </div>
@@ -342,6 +347,16 @@ function FeaturesBlocks() {
                 </h4>
                 <p className="text-gray-600 text-center">Web Security</p>
               </div>
+              {/* <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src="src/images/Sahithya.jpeg" className="h-64 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SAHITHYA K
+                </h4>
+                <p className="text-gray-600 text-center">Web Security</p>
+              </div> */}
               {/* 1st item */}
               <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"

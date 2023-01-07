@@ -3,6 +3,7 @@ import Transition from "../utils/Transition";
 
 import FeaturesBg from "../images/features-bg.png";
 import FeaturesElement from "../images/features-element.png";
+import { MdPeople } from "react-icons/md";
 
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
@@ -52,7 +53,7 @@ function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-blue-600"
+                    className="fill-current text-[#475569]"
                     width="64"
                     height="64"
                     rx="32"
@@ -96,7 +97,7 @@ function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-blue-600"
+                    className="fill-current text-[#475569]"
                     width="64"
                     height="64"
                     rx="32"
@@ -137,7 +138,7 @@ function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-blue-600"
+                    className="fill-current text-[#475569]"
                     width="64"
                     height="64"
                     rx="32"
@@ -171,7 +172,7 @@ function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-blue-600"
+                    className="fill-current text-[#475569]"
                     width="64"
                     height="64"
                     rx="32"
@@ -218,7 +219,7 @@ function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-blue-600"
+                    className="fill-current text-[#475569]"
                     width="64"
                     height="64"
                     rx="32"
@@ -252,7 +253,7 @@ function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-blue-600"
+                    className="fill-current text-[#475569]"
                     width="64"
                     height="64"
                     rx="32"
@@ -301,8 +302,10 @@ function FeaturesBlocks() {
           className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 mb-24"
           data-aos="fade-right"
         >
-          <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8 text-gray-400">
-            <h3 className="h3 mb-3">Powerful suite of tools</h3>
+          <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8 text-gray-200">
+            <h3 className="h3 mb-3">
+              Here's what recruiters had to say about us
+            </h3>
             <p className="text-md text-white">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore pariatur. Excepteur sint occaecat cupidatat non
@@ -322,22 +325,17 @@ function FeaturesBlocks() {
             }}
           >
             <div>
-              <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
-                Building the Simple ecosystem
+              <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
+                Freshers from Amrita are better than experienced people I have
+                hired from outside. 8 out of 12 people in the security team are
+                Amrita alumni.
               </div>
-              <div className="text-gray-600">
-                Take collaboration to the next level with security and
-                administrative features built for teams.
+              <div className="text-gray-600 italic">
+                Senior Manager, Product Security, VMware
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-              <svg
-                className="w-3 h-3 fill-current"
-                viewBox="0 0 12 12"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-              </svg>
+            <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
+              <MdPeople />
             </div>
           </a>
           <a
@@ -353,22 +351,16 @@ function FeaturesBlocks() {
             }}
           >
             <div>
-              <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
-                Building the Simple ecosystem
+              <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
+                I can vouch for their superior technical skills, dedication and
+                enthusiasm. The training they receive is excellent.
               </div>
-              <div className="text-gray-600">
-                Take collaboration to the next level with security and
-                administrative features built for teams.
+              <div className="text-gray-600 italic">
+                Information Security Investigator, Cisco
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-              <svg
-                className="w-3 h-3 fill-current"
-                viewBox="0 0 12 12"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-              </svg>
+            <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
+              <MdPeople />
             </div>
           </a>
           <a
@@ -384,22 +376,16 @@ function FeaturesBlocks() {
             }}
           >
             <div>
-              <div className="font-bold leading-snug tracking-tight mb-1 text-gray-400">
-                Building the Simple ecosystem
+              <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
+                I am very happy with their performance, especially level of
+                understanding in cyber security
               </div>
-              <div className="text-gray-600">
-                Take collaboration to the next level with security and
-                administrative features built for teams.
+              <div className="text-gray-600 italic">
+                Divyanshu Verma, Sr. Manager, Intel R&D, Bengaluru
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-              <svg
-                className="w-3 h-3 fill-current"
-                viewBox="0 0 12 12"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-              </svg>
+            <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
+              <MdPeople />
             </div>
           </a>
         </div>
