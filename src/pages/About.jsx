@@ -66,116 +66,20 @@ function Features() {
                 </div>
               </div>
               {/* Section content */}{" "}
-              <div className="md:grid md:grid-cols-8 md:gap-6  mt-24 ">
+              <div className=" mt-24 ">
                 {/* Content */}
                 <div
-                  className=" ml-48 max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+                  className=" ml-48 max-w-xl md:max-w-none md:w-full mx-auto md:mt-6"
                   data-aos="fade-right "
                 >
                   <div className="mb-8 md:mb-0">
                     {/* Tabs items */}
                     <div
-                      className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
+                      className="max-w-xl md:max-w-none md:w-full mx-auto "
                       data-aos="zoom-y-out"
                       ref={tabs}
                     >
-                      <div className="relative flex flex-col text-right lg:text-right">
-                        <div
-                          className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
-                          data-aos="zoom-y-out"
-                          ref={tabs}
-                        >
-                          <div className="relative flex flex-col text-right lg:text-right">
-                            <Transition
-                              show={tab === 1}
-                              appear={true}
-                              className="w-full"
-                              enter="transition ease-in-out duration-700 transform order-first"
-                              enterStart="opacity-0 translate-y-16"
-                              enterEnd="opacity-100 translate-y-0"
-                              leave="transition ease-in-out duration-300 transform absolute"
-                              leaveStart="opacity-100 translate-y-0"
-                              leaveEnd="opacity-0 -translate-y-16"
-                            >
-                              <div className="relative inline-flex flex-col">
-                                <img
-                                  className="md:max-w-none mx-auto rounded"
-                                  src={FeaturesBg}
-                                  width="500"
-                                  height="462"
-                                  alt="Features bg"
-                                />
-                                <img
-                                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                                  src={FeaturesElement}
-                                  width="500"
-                                  height="44"
-                                  alt="Element"
-                                  style={{ top: "30%" }}
-                                />
-                              </div>
-                            </Transition>
-                            <Transition
-                              show={tab === 2}
-                              appear={true}
-                              className="w-full"
-                              enter="transition ease-in-out duration-700 transform order-first"
-                              enterStart="opacity-0 translate-y-16"
-                              enterEnd="opacity-100 translate-y-0"
-                              leave="transition ease-in-out duration-300 transform absolute"
-                              leaveStart="opacity-100 translate-y-0"
-                              leaveEnd="opacity-0 -translate-y-16"
-                            >
-                              <div className="relative inline-flex flex-col">
-                                <img
-                                  className="md:max-w-none mx-auto rounded"
-                                  src={FeaturesBg}
-                                  width="500"
-                                  height="462"
-                                  alt="Features bg"
-                                />
-                                <img
-                                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                                  src={FeaturesElement}
-                                  width="500"
-                                  height="44"
-                                  alt="Element"
-                                  style={{ top: "30%" }}
-                                />
-                              </div>
-                            </Transition>
-                            <Transition
-                              show={tab === 3}
-                              appear={true}
-                              className="w-full"
-                              enter="transition ease-in-out duration-700 transform order-first"
-                              enterStart="opacity-0 translate-y-16"
-                              enterEnd="opacity-100 translate-y-0"
-                              leave="transition ease-in-out duration-300 transform absolute"
-                              leaveStart="opacity-100 translate-y-0"
-                              leaveEnd="opacity-0 -translate-y-16"
-                            >
-                              <div className="relative inline-flex flex-col">
-                                <img
-                                  className="md:max-w-none mx-auto rounded"
-                                  src={FeaturesBg}
-                                  width="500"
-                                  height="462"
-                                  alt="Features bg"
-                                />
-                                <img
-                                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                                  src={FeaturesElement}
-                                  width="500"
-                                  height="44"
-                                  alt="Element"
-                                  style={{ top: "30%" }}
-                                />
-                              </div>
-                            </Transition>
-                          </div>
-                        </div>
-                      </div>
+                      <div className="relative flex flex-col text-right lg:text-right"></div>
                     </div>
                   </div>
                 </div>
@@ -184,7 +88,7 @@ function Features() {
             <div className="max-w-3xl  pb-10 md:pb-16 mt-28 ml-28  transition ease-in-out delay-150 hover:scale-110   duration-300">
               <div
                 data-aos="fade-right"
-                className=" text-center text-lg p-6 rounded  transition duration-700 ease-in-out mb-3 hover:shadow-md  hover:bg-gray-300 hover:text-[#111827] border-2 border-double border-white 
+                className=" text-center text-lg p-6 rounded  transition duration-300 ease-in-out mb-3 hover:shadow-md  hover:bg-gray-300 hover:text-[#111827] border-2 border-double border-white 
               "
               >
                 <h1 className="h2 mb-4 text-center mt-4 ">How we function?</h1>
@@ -226,15 +130,6 @@ function Features() {
                           fields
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
-                        <svg
-                          className="w-3 h-3 fill-current"
-                          viewBox="0 0 12 12"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                        </svg>
-                      </div>
                     </a>
                     <a
                       className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-5 ${
@@ -252,15 +147,6 @@ function Features() {
                         <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Participating & organizing CTFs across the world
                         </div>
-                      </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
-                        <svg
-                          className="w-3 h-3 fill-current"
-                          viewBox="0 0 12 12"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                        </svg>
                       </div>
                     </a>
                     <a
@@ -280,15 +166,6 @@ function Features() {
                           Organizing workshops & training programmes
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
-                        <svg
-                          className="w-3 h-3 fill-current"
-                          viewBox="0 0 12 12"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                        </svg>
-                      </div>
                     </a>
                     <a
                       className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
@@ -306,15 +183,6 @@ function Features() {
                         <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Contributing to open-source security tools
                         </div>
-                      </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
-                        <svg
-                          className="w-3 h-3 fill-current"
-                          viewBox="0 0 12 12"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                        </svg>
                       </div>
                     </a>
                     <a
@@ -335,15 +203,6 @@ function Features() {
                           projects
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
-                        <svg
-                          className="w-3 h-3 fill-current"
-                          viewBox="0 0 12 12"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                        </svg>
-                      </div>
                     </a>
                     <a
                       className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
@@ -363,15 +222,6 @@ function Features() {
                           CVEs
                         </div>
                       </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
-                        <svg
-                          className="w-3 h-3 fill-current"
-                          viewBox="0 0 12 12"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                        </svg>
-                      </div>
                     </a>
                     <a
                       className={`flex items-center text-lg p-5 rounded hover:scale-110 border transition duration-300 ease-in-out mb-5 ${
@@ -389,15 +239,6 @@ function Features() {
                         <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                           Providing Cyber Security Consultancy Services
                         </div>
-                      </div>
-                      <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-5">
-                        <svg
-                          className="w-3 h-3 fill-current"
-                          viewBox="0 0 12 12"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                        </svg>
                       </div>
                     </a>
                   </div>

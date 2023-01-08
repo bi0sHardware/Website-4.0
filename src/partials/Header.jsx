@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
   const [top, setTop] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   // detect whether user has scrolled the page down by 10px
   useEffect(() => {
@@ -15,7 +17,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+      className={`fixed w-full z-30 md:bg-opacity-80 transition duration-300 ease-in-out ${
         !top && "bg-[#0f172a] backdrop-blur-sm shadow-lg"
       }`}
     >
@@ -28,9 +30,15 @@ function Header() {
               <img src="src/images/bios.png" className="w-28" />
             </a>
           </div>
+          <div className="visible md:invisible text-white absolute right-12 ">
+            <RxHamburgerMenu
+              className="w-8 h-8 "
+              onClick={() => setIsOpen(!isOpen)}
+            />
+          </div>
 
           {/* Site navigation */}
-          <nav className="flex flex-grow">
+          <nav className="flex flex-grow invisible md:visible">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <a

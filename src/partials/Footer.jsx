@@ -12,11 +12,11 @@ function Footer() {
         <div className="flex flex-row border-t border-gray-200">
           {/* 1st block */}
           <div className="sm:col-span-4 lg:col-span-4 w-28">
-            <div className="mb-2">
+            <div className="mb-2 w-24">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="Cruip">
                 <a>
-                  <img src="src/images/bios.png" className="h-24" />
+                  <img src="src/images/bios.png" className="h-24 mr-8 " />
                 </a>
               </Link>
             </div>
@@ -29,7 +29,7 @@ function Footer() {
           {/* 4th block */}
 
           {/* 5th block */}
-          <div className="sm:col-span-8 md:col-span-8 lg:col-span-6 mt-10 flex flex-row  ">
+          <div className="sm:col-span-8 md:col-span-8 lg:col-span-6 mt-10 flex flex-row sm:flex-wrap ">
             <div>
               <p className="text-sm text-gray-400 mb-4 ">
                 © Team bi0s Hardware 2023. All rights reserved.
