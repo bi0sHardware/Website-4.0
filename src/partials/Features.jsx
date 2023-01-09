@@ -6,7 +6,7 @@ import FeaturesElement from "../images/features-element.png";
 
 function Features() {
   return (
-    <section className="relative bg-[#111827] text-white ">
+    <section className="relative bg-[#111827] text-white font-mono selection:bg-lime-500 selection:text-[#111827] ">
       <div
         className="absolute inset-0 bg-[#111827] pointer-events-none mb-16"
         aria-hidden="true"

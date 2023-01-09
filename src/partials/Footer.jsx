@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer
-      className="bg-[#111827] 
+      className="bg-[#111827] font-mono selection:bg-lime-500 selection:text-[#111827] 
     "
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

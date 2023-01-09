@@ -11,12 +11,12 @@ import Banner from "../partials/Banner";
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden selection:bg-lime-500 selection:text-[#111827]">
+    <div className="flex flex-col min-h-screen overflow-hidden selection:bg-lime-500 selection:text-[#111827] ">
       {/*  Site header */}
       <Header />
 
       {/*  Page content */}
-      <main className="flex-grow">
+      <main className="flex-grow  ">
         {/*  Page sections */}
         <HeroHome />
         <FeaturesHome />

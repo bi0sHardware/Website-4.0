@@ -30,7 +30,7 @@ function Features() {
   }, [tab]);
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden font-mono selection:bg-lime-500 selection:text-[#111827]">
       {/*  Site header */}
       <Header2 />
       {/*  Page content */}

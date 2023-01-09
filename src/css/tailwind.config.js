@@ -61,7 +61,7 @@ module.exports = {
         "1/1": "100%",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        mono: ["JetBrains", "monospace"],
       },
       fontSize: {
         xs: "0.75rem",
