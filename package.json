@@ -7,7 +7,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@headlessui/react": "^1.7.7",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.3",
     "@tailwindcss/forms": "^0.5.2",
     "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
