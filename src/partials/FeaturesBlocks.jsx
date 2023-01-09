@@ -25,7 +25,7 @@ function FeaturesBlocks() {
     <section className="relative bg-[#111827] " id="research">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
-        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-bg-[#1e293b] pointer-events-none font-mono selection:bg-lime-500 selection:text-[#111827]"
+        className="absolute inset-0 top-1/2 md:mt-20 lg:mt-0 bg-bg-[#1e293b] pointer-events-none font-mono selection:bg-lime-500 selection:text-[#111827]"
         aria-hidden="true"
       ></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2"></div>
@@ -33,7 +33,7 @@ function FeaturesBlocks() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-10 md:py-12">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center mt-12 pb-8 md:pb-8 font-mono selection:bg-lime-500 selection:text-[#111827]">
+          <div className="max-w-3xl mx-auto text-center mt-8 pb-8 md:pb-8 font-mono selection:bg-lime-500 selection:text-[#111827]">
             <h2 className="h2 mb-4 text-white ">Our Fields of Research</h2>
             <p className="text-xl text-white ">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -289,7 +289,7 @@ function FeaturesBlocks() {
           </div>
         </div>
       </div>
-      <div className=" mb-24 text-center">
+      <div className=" mb-32 text-center">
         <a
           href="/research"
           className="btn text-white  border-white font-mono  w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"

@@ -55,6 +55,14 @@ function Features() {
                           machines, robots, hand-held telephones and
                           automobiles.
                         </p>
+                        <div className="mt-6 flex justify-end mr-4 ">
+                          {" "}
+                          <a href="https://wiki.bi0s.in/hardware/basic-electronics/electronics/">
+                            <button class="bg-transparent hover:bg-emerald-500 text-emerald-500 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded">
+                              More
+                            </button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div
@@ -518,23 +526,6 @@ function Features() {
                   {/* item 2 */}
                   <div class=" w-full lg:max-w-full lg:flex">
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-                      data-aos="fade-down"
-                    >
-                      <div class="mb-8">
-                        <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
-                          Wireless Security
-                        </p>
-
-                        <p class="text-gray-700 text-base">
-                          As everything is getting mobile and wireless, the
-                          urgency for effective wireless threat protection is on
-                          everyone's watch, as wireless networks are developed
-                          rapidly making them vulnerable in a myriad of ways.
-                        </p>
-                      </div>
-                    </div>
-                    <div
                       class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
                       title="Mountain"
                     >
@@ -557,6 +548,32 @@ function Features() {
                         <path d="M37.86,35H35.93a1,1,0,0,0,0,2h1.93a1,1,0,0,0,0-2Z" />
                       </svg>
                     </div>
+
+                    <div
+                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      data-aos="fade-down"
+                    >
+                      <div class="mb-8">
+                        <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                          Wireless Security
+                        </p>
+
+                        <p class="text-gray-700 text-base">
+                          As everything is getting mobile and wireless, the
+                          urgency for effective wireless threat protection is on
+                          everyone's watch, as wireless networks are developed
+                          rapidly making them vulnerable in a myriad of ways.
+                        </p>
+                        <div className="mt-6 ">
+                          {" "}
+                          <a href="https://wiki.bi0s.in/hardware/wireless/introduction/">
+                            <button class="bg-transparent hover:bg-emerald-500 text-emerald-500 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded">
+                              More
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   {/* item 3 */}
                   <div class=" w-full lg:max-w-full lg:flex">
@@ -577,6 +594,14 @@ function Features() {
                           complex systems of vehicle security and make sure that
                           it keeps up with the new features.
                         </p>
+                        <div className="mt-6 flex justify-end mr-4 ">
+                          {" "}
+                          <a href="https://wiki.bi0s.in/hardware/automotive/introduction/">
+                            <button class="bg-transparent hover:bg-emerald-500 text-emerald-500 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded">
+                              More
+                            </button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div
@@ -605,25 +630,6 @@ function Features() {
                   </div>
                   {/* item 4*/}
                   <div class=" w-full lg:max-w-full lg:flex ">
-                    <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-                      data-aos="fade-down"
-                    >
-                      <div class="mb-8">
-                        <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
-                          O T Security
-                        </p>
-
-                        <p class="text-gray-700 text-base">
-                          SCADA and Industrial Control Systems systems have been
-                          relatively excluded from security testing by the
-                          security industry. This has made them vulnerable and
-                          leading to some successful intrusions that have
-                          resulted in malicious attackers obtaining
-                          administrative access to core systems.
-                        </p>
-                      </div>
-                    </div>
                     <div
                       class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
                       title="Mountain"
@@ -720,6 +726,33 @@ function Features() {
                         </g>
                       </svg>
                     </div>
+                    <div
+                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      data-aos="fade-down"
+                    >
+                      <div class="mb-8">
+                        <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                          O T Security
+                        </p>
+
+                        <p class="text-gray-700 text-base">
+                          SCADA and Industrial Control Systems systems have been
+                          relatively excluded from security testing by the
+                          security industry. This has made them vulnerable and
+                          leading to some successful intrusions that have
+                          resulted in malicious attackers obtaining
+                          administrative access to core systems.
+                        </p>
+                        {/* <div className="mt-6 ">
+                          {" "}
+                          <a href="https://wiki.bi0s.in/hardware/firmware/introduction/">
+                            <button class="bg-transparent hover:bg-emerald-500 text-emerald-500 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded">
+                              Button
+                            </button>
+                          </a>
+                        </div> */}
+                      </div>
+                    </div>
                   </div>
                   {/* item 5*/}
                   <div class=" w-full lg:max-w-full lg:flex">
@@ -740,6 +773,14 @@ function Features() {
                           rather than targeting the program or its code
                           directly.
                         </p>
+                        <div className="mt-6 flex justify-end mr-4 ">
+                          {" "}
+                          <a href="https://wiki.bi0s.in/hardware/firmware/introduction/">
+                            <button class="bg-transparent hover:bg-emerald-500 text-emerald-500 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded">
+                              More
+                            </button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div
@@ -877,24 +918,6 @@ function Features() {
                   {/* item 6*/}
                   <div class=" w-full lg:max-w-full lg:flex pb-8">
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-                      data-aos="fade-down"
-                    >
-                      <div class="mb-8">
-                        <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
-                          Firmware Analysis
-                        </p>
-
-                        <p class="text-gray-700 text-base">
-                          Firmware is the code that runs on an embedded
-                          device.In embedded systems, manufacturers usually go
-                          for functionality over security to decrease
-                          manufacturing cost.We analyze the firmware, to find
-                          various security vulnerabilities present.
-                        </p>
-                      </div>
-                    </div>
-                    <div
                       class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
                       title="Mountain"
                       data-aos="fade-down"
@@ -933,6 +956,32 @@ function Features() {
                         <path d="M169.15,282.86a5.69,5.69,0,0,0-5.69,5.69l.06,78.75a5.69,5.69,0,0,0,11.38,0l-.06-78.74A5.68,5.68,0,0,0,169.15,282.86Z" />
                         <path d="M125.79,288.51v78.76a5.69,5.69,0,1,0,11.37,0V288.51a5.69,5.69,0,0,0-11.37,0Z" />
                       </svg>
+                    </div>
+                    <div
+                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      data-aos="fade-down"
+                    >
+                      <div class="mb-8">
+                        <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
+                          Firmware Analysis
+                        </p>
+
+                        <p class="text-gray-700 text-base">
+                          Firmware is the code that runs on an embedded
+                          device.In embedded systems, manufacturers usually go
+                          for functionality over security to decrease
+                          manufacturing cost.We analyze the firmware, to find
+                          various security vulnerabilities present.
+                        </p>
+                        <div className="mt-6 ">
+                          {" "}
+                          <a href="https://wiki.bi0s.in/hardware/firmware/introduction/">
+                            <button class="bg-transparent hover:bg-emerald-500 text-emerald-500 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded">
+                              More
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
