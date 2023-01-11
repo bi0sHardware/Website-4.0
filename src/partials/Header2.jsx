@@ -1,67 +1,67 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
+import { HiMenuAlt2, RxCross2 } from "react-icons/all";
 import { Link } from "react-router-dom";
 
-function Header() {
-  const [top, setTop] = useState(true);
-
-  // detect whether user has scrolled the page down by 10px
-  useEffect(() => {
-    const scrollHandler = () => {
-      window.pageYOffset > 10 ? setTop(false) : setTop(true);
-    };
-    window.addEventListener("scroll", scrollHandler);
-    return () => window.removeEventListener("scroll", scrollHandler);
-  }, [top]);
+const TopBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header
-      className={`fixed w-full z-30 md:bg-opacity-90 transition  font-mono duration-300 ease-in-out ${
-        !top && "bg-[#0f172a] backdrop-blur-sm shadow-lg"
-      }`}
-    >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Site branding */}
-          <div className="flex-shrink-0 mr-4">
-            {/* Logo */}
+    <div className="w-full bg-[#111827] backdrop-blur-sm md:bg-opacity-90 transition shadow-lg fixed top-0 left-0 right-0 z-50 text-white font-mono">
+      <div className="justify-between px-8 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div>
+          <div className="flex items-center justify-between py-2 md:block">
             <a href="/">
-              <img src="src/images/bios.png" className="w-28" />
+              <div className="flex flex-row gap-2">
+                <img src="src/images/bios.png" alt={"logo"} className="w-32" />
+              </div>
             </a>
+            {/* HAMBURGER BUTTON FOR MOBILE */}
+            <div className="md:hidden">
+              <button
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {isOpen ? (
+                  <RxCross2 className="w-6 h-6" />
+                ) : (
+                  <HiMenuAlt2 className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
-
-          {/* Site navigation */}
-          <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li>
-                <a
-                  href="/about"
-                  className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110"
-                >
+        </div>
+        <div>
+          <div
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              isOpen ? "p-12 md:p-0 block" : "hidden"
+            }`}
+          >
+            <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+              <li className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110">
+                <a href="/about" onClick={() => setIsOpen(!isOpen)}>
                   About
                 </a>
               </li>
-              <li>
+              <li className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110">
                 <a
                   href="/research"
-                  className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110"
+                  scroll={false}
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   Research
                 </a>
               </li>
-              <li>
-                <a
-                  href="/members"
-                  className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110"
-                >
+              <li className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110">
+                <a href="/members" onClick={() => setIsOpen(!isOpen)}>
                   Members
                 </a>
               </li>
-              <li>
+              <li className="whitespace-nowrap  text-lg font-bold ">
                 <Link
                   to="/signin"
-                  className="btn-sm text-gray-200 bg-[#111827] hover:bg-gray-100 hover:text-[#111827] ml-3 hover:scale-110"
+                  className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110"
                 >
-                  <span>Sign In</span>
+                  Sign In
                   <svg
                     className="w-3 h-3 fill-current text-[#111827] flex-shrink-0 ml-2 -mr-1"
                     viewBox="0 0 12 12"
@@ -75,11 +75,11 @@ function Header() {
                 </Link>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
-    </header>
+    </div>
   );
-}
+};
 
-export default Header;
+export default TopBar;
