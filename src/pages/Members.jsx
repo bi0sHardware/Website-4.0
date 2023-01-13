@@ -38,7 +38,7 @@ function FeaturesBlocks() {
       <Header2 />
 
       {/*  Page content */}
-      <main className="flex-grow">
+      <main className="flex-grow ">
         {/*  Page sections */}
 
         <section className="relative bg-[#111827] text-white  w-screen">
@@ -49,10 +49,10 @@ function FeaturesBlocks() {
           ></div>
           <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2"></div>
 
-          <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="relative max-w-6xl mx-auto px-4 ">
             <div className="py-10 md:py-12">
               {/* Section header */}
-              <div className="max-w-3xl mx-auto text-center   mt-12 pb-8 md:pb-8">
+              <div className="max-w-3xl mx-auto text-center   mt-16 pb-8 md:pb-8">
                 <h2 className="h2 mb-4 text-white text-4xl  ml-4">Our Team</h2>
 
                 <h2 className="h2 mb-4 text-white text-3xl text-center ml-4 ">
@@ -60,7 +60,7 @@ function FeaturesBlocks() {
                 </h2>
                 <div className="flex sm:flex-col   lg:flex-row my-10 ">
                   <div
-                    className=" ml-16 text-2xl  font-bold md:ml-10  w-1/2   sm:w-full sm:h-96 sm:object-cover sm:object-center "
+                    className=" ml-8 text-2xl s font-bold md:ml-10  w-1/2   sm:w-full sm:h-96 sm:object-cover sm:object-center "
                     data-aos="fade-right"
                   >
                     <img
@@ -68,14 +68,14 @@ function FeaturesBlocks() {
                       className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4 "
                     />
                   </div>
-                  <div className=" w-1/2">
-                    <h2 className="  text-2xl  text-left   font-bold  text-gray-300">
+                  <div className="w-full">
+                    <h2 className="  text-2xl md:text-left    font-bold  text-gray-300">
                       Th3_M3nt0r
                     </h2>
-                    <h3 className="text-white sm:text-center text-2xl text-left font-bold mt-2">
+                    <h3 className="text-white md:text-left  text-2xl  font-bold mt-2">
                       VIPIN PAVITHRAN
                     </h3>
-                    <p className=" mt-4 text-left text-gray-300  flex sm:text:center  ">
+                    <p className=" mt-4  text-gray-300   md:text-left   ">
                       Vipin Pavithran is a cyber-security veteran and takes deep
                       passion in mentoring students at Amrita Vishwa
                       Vidyapeetham. Prior to coming to Amritapuri, he has worked

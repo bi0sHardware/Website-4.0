@@ -1,49 +1,49 @@
 import React, { useState } from "react";
 import Modal from "../utils/Modal";
-
+import { send } from "emailjs-com";
 import HeroImage from "../images/hero-image.png";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const [bannerOpen, setBannerOpen] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+  const [showContact, setShowContact] = useState(true);
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    to_name: "",
+    message: "",
+    reply_to: "",
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send("service_kvh048k", "template_w7ghtng", toSend, "azIhvZD00AvBAkhh4")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setShowModal(false);
+        setShowContact(false);
+        alert("Success! Your mail was sent. You will hear from us shortly");
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+        setShowModal(false);
+        alert("Oops! your mail was not sent. Please try again later.");
+      });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
 
   return (
     <section className="relative bg-[#111827] selection:bg-lime-500 font-mono">
       {/* Illustration behind hero content */}
-      <div
-        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
-        aria-hidden="true"
-      >
-        <svg
-          width="1360"
-          height="578"
-          viewBox="0 0 1360 578"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <linearGradient
-              x1="50%"
-              y1="0%"
-              x2="0%"
-              y2="100%"
-              id="illustration-01"
-            >
-              <stop stopColor="#FFF" offset="0%" />
-              <stop stopColor="#EAEAEA" offset="77.402%" />
-              <stop stopColor="#DFDFDF" offset="100%" />
-            </linearGradient>
-          </defs>
-          <g fill="url(#illustration-01)" fillRule="evenodd">
-            <circle cx="1232" cy="128" r="128" />
-            <circle cx="155" cy="443" r="64" />
-          </g>
-        </svg>
-      </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
+          <div className="text-center pb-12 md:pb-16  ">
             <h1
               className=" text-5xl md:text-6xl font-extrabold  leading-tighter tracking-tighter mb-4 text-white"
               data-aos="zoom-y-out"
@@ -55,7 +55,7 @@ function HeroHome() {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p
-                className="text-xl text-white mb-8"
+                className="text-xl text-white mb-8 "
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
@@ -66,19 +66,29 @@ function HeroHome() {
                 infosec events, trainings, and work on a wide variety of
                 cyber-security research projects.
               </p>
+              <div className="border-b width-full mx-32 border-gray-500" />
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
-                <div>
-                  <a
-                    className="btn text-white  border-white w-full mb-4 sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"
-                    href="#0"
-                  >
-                    Contact Us
-                  </a>
-                </div>
+                {/* {0 ? (
+                  <div>
+                    <div className=" bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60 md:p-0 p-3 font-mono selection:bg-lime-500 selection:text-[#111827]">
+                      <div className="bg-transparent border-2 border-white rounded-tl-lg rounded-br-lg   hover:bg-white hover:scale-110 text-white hover:text-[#111827] text-sm p-3  shadow-lg flex justify-between ">
+                        <div className="font-medium   mx-4 inline-flex ">
+                          <button
+                            type="button"
+                            onClick={() => setShowModal(true)}
+                            className="hover:text-[#111827] "
+                          >
+                            Contact Us
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : null} */}
                 {/* <div>
                   <a
                     className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
@@ -90,6 +100,69 @@ function HeroHome() {
               </div>
             </div>
           </div>
+          {showModal ? (
+            <div className="flex justify-center items-center  fixed inset-0 z-50 outline-none focus:outline-none opacity-95 sm:rounded">
+              <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none ">
+                  <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
+                    <h3 className="text-3xl font=semibold mr-4 text-[#111827]">
+                      Contact Us
+                    </h3>
+                    {/* <ButtonMailto
+                label="Contact Us"
+                mailto="mailto:aythihas2003@gmail.com"
+              /> */}
+                    <form onSubmit={onSubmit}>
+                      <div className="flex flex-col">
+                        <label>Your name</label>
+                        <input
+                          type="text"
+                          name="from_name"
+                          placeholder="from name"
+                          value={toSend.from_name}
+                          onChange={handleChange}
+                          className="rounded-lg"
+                        />
+                        <label>To name</label>
+                        <input
+                          type="text"
+                          name="to_name"
+                          placeholder="to name"
+                          value={toSend.to_name}
+                          onChange={handleChange}
+                          className="rounded-lg"
+                        />
+                        <label>Your email</label>
+                        <input
+                          type="text"
+                          name="reply_to"
+                          placeholder="Your email"
+                          value={toSend.reply_to}
+                          onChange={handleChange}
+                          className="rounded-lg"
+                        />
+                        <label>Message</label>
+                        <textarea
+                          type="text"
+                          name="message"
+                          placeholder="Your message"
+                          value={toSend.message}
+                          onChange={handleChange}
+                          className="rounded-lg"
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        className="bg-emerald-500 rounded text-white px-4 py-2 mt-2"
+                      >
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
 
           {/* Hero image */}
           <div>

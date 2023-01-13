@@ -15,7 +15,7 @@ function Home() {
       {/*  Site header */}
       <Header />
 
-      {/*  Page content */}
+      {/* Page content */}
       <main className="flex-grow  ">
         {/*  Page sections */}
         <HeroHome />
