@@ -19,19 +19,6 @@ import { MdMessage } from "react-icons/md";
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
 
-  const tabs = useRef(null);
-
-  const heightFix = () => {
-    if (tabs.current.children[tab]) {
-      tabs.current.style.height =
-        tabs.current.children[tab - 1].offsetHeight + "px";
-    }
-  };
-
-  useEffect(() => {
-    heightFix();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab]);
   return (
     <div className="flex flex-col min-h-screen overflow-hidden font-mono selection:bg-lime-500 selection:text-[#111827]">
       {/*  Site header */}
@@ -41,7 +28,7 @@ function FeaturesBlocks() {
       <main className="flex-grow ">
         {/*  Page sections */}
 
-        <section className="relative bg-[#111827] text-white  w-screen">
+        <section className="relative bg-[#111827] text-white  w-screen h-">
           {/* Section background (needs .relative class on parent and next sibling elements) */}
           <div
             className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-bg-[#1e293b] pointer-events-none"
@@ -90,7 +77,7 @@ function FeaturesBlocks() {
                       InCTF in 2010, which was the first-ever CTF contest to be
                       organized in India.
                     </p>
-                    <div className="flex flex-row gap-4 mt-8 text-4xl justify-end">
+                    <div className="flex flex-row gap-4 mt-8 text-4xl justify-center md:justify-end">
                       <a href="https://twitter.com/th3_m3nt0r">
                         <BsTwitter />
                       </a>
@@ -445,7 +432,7 @@ function FeaturesBlocks() {
               </h2>
             </div>
             <div
-              className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mb-24"
+              className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none "
               data-aos="fade-down"
             >
               {/* 2nd item */}
@@ -545,7 +532,7 @@ function FeaturesBlocks() {
                 <p className="text-gray-600 text-center">Embedded Devlopment</p>
               </div>
               <div
-                className="relative flex flex-col items-center p-5 rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                className="relative flex flex-col items-center p-5 rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2 mb-16"
                 data-aos="fade-down"
               >
                 <img src="src/images/keerthana.jpeg" className="h-64 rounded" />
@@ -555,14 +542,6 @@ function FeaturesBlocks() {
                 <p className="text-gray-600 text-center">Automotive Security</p>
               </div>
             </div>
-          </div>
-
-          <div className="md:grid md:grid-cols-12 md:gap-6 text-white ml-16">
-            <div
-              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
-              data-aos="zoom-y-out"
-              ref={tabs}
-            ></div>
           </div>
         </section>
       </main>

@@ -13,6 +13,7 @@ import ResetPassword from "./pages/ResetPassword";
 import Members from "./pages/Members";
 import Research from "./pages/Research";
 import About from "./pages/About";
+import Branding from "./pages/Branding";
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
         <Route path="/research" element={<Research />} />
         <Route path="/about" element={<About />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/branding" element={<Branding />} />
       </Routes>
     </>
   );

@@ -8,19 +8,6 @@ import { MdPeople } from "react-icons/md";
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
 
-  const tabs = useRef(null);
-
-  const heightFix = () => {
-    if (tabs.current.children[tab]) {
-      tabs.current.style.height =
-        tabs.current.children[tab - 1].offsetHeight + "px";
-    }
-  };
-
-  useEffect(() => {
-    heightFix();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab]);
   return (
     <section className="relative bg-[#111827] " id="research">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -297,12 +284,12 @@ function FeaturesBlocks() {
           More
         </a>
       </div>
-      <div className="md:grid md:grid-cols-12 md:gap-6 text-white ml-16 font-mono selection:bg-lime-500 selection:text-[#111827]">
+      <div className="mx-8   text-white flex  ml-16 font-mono selection:bg-lime-500 selection:text-[#111827]  ">
         <div
-          className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 mb-24"
+          className="max-w-xl md:max-w-none  md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 mb-16  "
           data-aos="fade-right"
         >
-          <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8 text-gray-200">
+          <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8  text-gray-200">
             <h3 className="h3 mb-3">
               Here's what recruiters had to say about us
             </h3>
@@ -312,18 +299,7 @@ function FeaturesBlocks() {
               proident, sunt in culpa.
             </p>
           </div>
-          <a
-            className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-              tab !== 2
-                ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                : "bg-gray-200 border-transparent"
-            }`}
-            href="#0"
-            onClick={(e) => {
-              e.preventDefault();
-              setTab(1);
-            }}
-          >
+          <div className=" bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
             <div>
               <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                 Freshers from Amrita are better than experienced people I have
@@ -337,19 +313,8 @@ function FeaturesBlocks() {
             <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
               <MdPeople />
             </div>
-          </a>
-          <a
-            className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-              tab !== 2
-                ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                : "bg-gray-200 border-transparent"
-            }`}
-            href="#0"
-            onClick={(e) => {
-              e.preventDefault();
-              setTab(1);
-            }}
-          >
+          </div>
+          <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
             <div>
               <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                 I can vouch for their superior technical skills, dedication and
@@ -362,19 +327,8 @@ function FeaturesBlocks() {
             <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
               <MdPeople />
             </div>
-          </a>
-          <a
-            className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-              tab !== 2
-                ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                : "bg-gray-200 border-transparent"
-            }`}
-            href="#0"
-            onClick={(e) => {
-              e.preventDefault();
-              setTab(1);
-            }}
-          >
+          </div>
+          <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
             <div>
               <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                 I am very happy with their performance, especially level of
@@ -387,101 +341,6 @@ function FeaturesBlocks() {
             <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
               <MdPeople />
             </div>
-          </a>
-        </div>
-        <div
-          className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 md:mb-0 md:order-1"
-          data-aos="zoom-y-out"
-          ref={tabs}
-        >
-          <div className="relative flex flex-col text-center lg:text-right">
-            <Transition
-              show={tab === 1}
-              appear={true}
-              className="w-full"
-              enter="transition ease-in-out duration-700 transform order-first"
-              enterStart="opacity-0 translate-y-16"
-              enterEnd="opacity-100 translate-y-0"
-              leave="transition ease-in-out duration-300 transform absolute"
-              leaveStart="opacity-100 translate-y-0"
-              leaveEnd="opacity-0 -translate-y-16"
-            >
-              <div className="relative inline-flex flex-col">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={FeaturesBg}
-                  width="500"
-                  height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                  src={FeaturesElement}
-                  width="500"
-                  height="44"
-                  alt="Element"
-                  style={{ top: "30%" }}
-                />
-              </div>
-            </Transition>
-            <Transition
-              show={tab === 2}
-              appear={true}
-              className="w-full"
-              enter="transition ease-in-out duration-700 transform order-first"
-              enterStart="opacity-0 translate-y-16"
-              enterEnd="opacity-100 translate-y-0"
-              leave="transition ease-in-out duration-300 transform absolute"
-              leaveStart="opacity-100 translate-y-0"
-              leaveEnd="opacity-0 -translate-y-16"
-            >
-              <div className="relative inline-flex flex-col">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={FeaturesBg}
-                  width="500"
-                  height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                  src={FeaturesElement}
-                  width="500"
-                  height="44"
-                  alt="Element"
-                  style={{ top: "30%" }}
-                />
-              </div>
-            </Transition>
-            <Transition
-              show={tab === 3}
-              appear={true}
-              className="w-full"
-              enter="transition ease-in-out duration-700 transform order-first"
-              enterStart="opacity-0 translate-y-16"
-              enterEnd="opacity-100 translate-y-0"
-              leave="transition ease-in-out duration-300 transform absolute"
-              leaveStart="opacity-100 translate-y-0"
-              leaveEnd="opacity-0 -translate-y-16"
-            >
-              <div className="relative inline-flex flex-col">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={FeaturesBg}
-                  width="500"
-                  height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none absolute w-full left-0 transform animate-float"
-                  src={FeaturesElement}
-                  width="500"
-                  height="44"
-                  alt="Element"
-                  style={{ top: "30%" }}
-                />
-              </div>
-            </Transition>
           </div>
         </div>
       </div>

@@ -96,12 +96,17 @@ function Banner() {
                       className="rounded-lg"
                     />
                   </div>
-                  <button
-                    type="submit"
-                    className="bg-emerald-500 rounded text-white px-4 py-2 mt-2"
-                  >
-                    Submit
-                  </button>
+                  <div className="flex gap-4">
+                    <button
+                      type="submit"
+                      className="bg-emerald-500 rounded text-white px-4 py-2 mt-2"
+                    >
+                      Submit
+                    </button>
+                    <button className="bg-emerald-500 rounded text-white px-4 py-2 mt-2">
+                      Close
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
