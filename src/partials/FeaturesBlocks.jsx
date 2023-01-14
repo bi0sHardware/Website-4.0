@@ -15,9 +15,9 @@ function FeaturesBlocks() {
         className="absolute inset-0 top-1/2 md:mt-20 lg:mt-0 bg-bg-[#1e293b] pointer-events-none font-mono selection:bg-lime-500 selection:text-[#111827]"
         aria-hidden="true"
       ></div>
-      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2"></div>
+      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2 "></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-12">
         <div className="py-10 md:py-12">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center mt-8 pb-8 md:pb-8 font-mono selection:bg-lime-500 selection:text-[#111827]">
@@ -310,9 +310,9 @@ function FeaturesBlocks() {
                 Senior Manager, Product Security, VMware
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
+            {/* <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
               <MdPeople />
-            </div>
+            </div> */}
           </div>
           <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
             <div>
@@ -324,9 +324,9 @@ function FeaturesBlocks() {
                 Information Security Investigator, Cisco
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
+            {/* <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
               <MdPeople />
-            </div>
+            </div> */}
           </div>
           <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
             <div>
@@ -338,9 +338,9 @@ function FeaturesBlocks() {
                 Divyanshu Verma, Sr. Manager, Intel R&D, Bengaluru
               </div>
             </div>
-            <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
+            {/* <div className="flex justify-center items-center w-8 h-8 bg-[#475569] rounded-full shadow flex-shrink-0 ml-3">
               <MdPeople />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

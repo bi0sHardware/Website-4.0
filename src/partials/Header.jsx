@@ -56,7 +56,7 @@ const TopBar = () => {
                   Members
                 </a>
               </li>
-              <li className="hover:text-[#111827] rounded-xl hover:bg-white">
+              {/* <li className="hover:text-[#111827] rounded-xl hover:bg-white">
                 <Link
                   to="/signin"
                   className="font-medium hover:text-[#111827] text-gray-300  px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110"
@@ -73,7 +73,7 @@ const TopBar = () => {
                     />
                   </svg>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
