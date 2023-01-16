@@ -15,7 +15,7 @@ import Banner from "../partials/Banner";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { MdMessage } from "react-icons/md";
-
+import sir from "../images/vipinsir.jpeg";
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
 
@@ -51,7 +51,7 @@ function FeaturesBlocks() {
                     data-aos="fade-right"
                   >
                     <img
-                      src="src/images/vipinsir.jpeg"
+                      src={sir}
                       className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4 "
                     />
                   </div>
