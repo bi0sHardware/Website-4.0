@@ -15,6 +15,22 @@ import Banner from "../partials/Banner";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { MdMessage } from "react-icons/md";
+// images
+import vipinsir from "../images/vipinsir.jpeg";
+// cofounders
+import season from "../images/season.jpeg";
+import ashwinnambiar from "../images/ashwinnambiar.jpeg";
+import hariprasad from "../images/hariprasad.jpeg";
+// Mentors
+
+import viveknj from "../images/viveknj.jpeg";
+import aswinc from "../images/aswinc.jpeg";
+import athul from "../images/athul.jpeg";
+import indraraj from "../images/indraraj.jpeg";
+import nidhin from "../images/nidhin.jpeg";
+import ranit from "../images/ranit.jpeg";
+
+
 
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
@@ -51,7 +67,7 @@ function FeaturesBlocks() {
                     data-aos="fade-right"
                   >
                     <img
-                      src="src/images/vipinsir.jpeg"
+                      src={vipinsir}
                       className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4 "
                     />
                   </div>
@@ -104,7 +120,7 @@ function FeaturesBlocks() {
                   data-aos="fade-down"
                 >
                   <img
-                    src="src/images/ashwinnambiar.jpeg"
+                    src={ashwinnambiar}
                     className="h-64 rounded"
                   />
                   <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
@@ -137,7 +153,7 @@ function FeaturesBlocks() {
                   className="relative flex flex-col items-center p-5 rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                   data-aos="fade-down"
                 >
-                  <img src="src/images/season.jpeg" className="h-64 rounded" />
+                  <img src={season} className="h-64 rounded" />
                   <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                     SEASON CHERIAN
                   </h4>
@@ -441,7 +457,7 @@ function FeaturesBlocks() {
                 data-aos="fade-down"
               >
                 <img
-                  src="src/images/ashwinnambiar.jpeg"
+                  src={ashwinnambiar}
                   className="h-64 rounded"
                 />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
