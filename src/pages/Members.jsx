@@ -21,6 +21,7 @@ import vipinsir from "../images/vipinsir.jpeg";
 import season from "../images/season.jpeg";
 import ashwinnambiar from "../images/ashwinnambiar.jpeg";
 import hariprasad from "../images/hariprasad.jpeg";
+
 // Mentors
 
 import viveknj from "../images/viveknj.jpeg";
@@ -29,9 +30,32 @@ import athul from "../images/athul.jpeg";
 import indraraj from "../images/indraraj.jpeg";
 import nidhin from "../images/nidhin.jpeg";
 import ranit from "../images/ranit.jpeg";
+//3rd years
+import sreeshankar1 from "../images/sreesankar1.jpeg";
+import hridul from "../images/hridul.jpeg";
+import ghanshyam from "../images/ghanshyam.jpeg";
+import kiran from "../images/kiran.jpeg";
+import gautamjb from "../images/gauthamjb.jpeg";
+import archit from "../images/archit.jpeg";
+//2nd years
+import satysai from "../images/satysai.jpeg";
+import siddharth from "../images/siddharth.jpeg";
+import govind from "../images/govind.jpeg";
+import karthik from "../images/karthik.jpeg";
+import rajask from "../images/rajask.jpeg";
+import nived from "../images/nived.jpeg";
+import drupad from "../images/drupad.jpeg";
+import avanthika from "../images/avanthika.jpeg";
+import swetha from "../images/swetha.jpeg";
+import roopa from "../images/roopa.jpeg";
 
-
-
+//alumni
+import hari from "../images/hari.jpeg";
+import karthiklade from "../images/karthiklade.jpeg";
+import aathira from "../images/aathira.jpeg";
+import arya from "../images/arya.jpeg";
+import amitha from "../images/amitha.jpeg";
+import keerthana from "../images/keerthana.jpeg";
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
 
@@ -119,10 +143,7 @@ function FeaturesBlocks() {
                   className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2 "
                   data-aos="fade-down"
                 >
-                  <img
-                    src={ashwinnambiar}
-                    className="h-64 rounded"
-                  />
+                  <img src={ashwinnambiar} className="h-64 rounded" />
                   <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                     ASHWIN NAMBIAR
                   </h4>
@@ -136,10 +157,7 @@ function FeaturesBlocks() {
                   className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                   data-aos="fade-down"
                 >
-                  <img
-                    src="src/images/hariprasad.jpeg"
-                    className="h-64 rounded"
-                  />
+                  <img src={hariprasad} className="h-64 rounded" />
                   <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                     HARIPRASAD K V
                   </h4>
@@ -174,7 +192,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/season.jpeg" className="h-64 rounded" />
+                <img src={season} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SEASON CHERIAN
                 </h4>
@@ -185,7 +203,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/viveknj.jpeg" className="h-64 rounded" />
+                <img src={viveknj} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   VIVEK N J
                 </h4>
@@ -204,7 +222,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/aswinc.jpeg" className="h-64 rounded" />
+                <img src={aswinc} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ASWIN C
                 </h4>
@@ -215,7 +233,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/athul.jpeg" className="h-64 rounded" />
+                <img src={athul} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ATHUL MENON
                 </h4>
@@ -226,7 +244,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/indraraj.jpeg" className="h-64 rounded" />
+                <img src={indraraj} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   INDRARAJ BISWAS
                 </h4>
@@ -236,7 +254,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/nidhin.jpeg" className="h-64 rounded" />
+                <img src={nidhin} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   NIDHIN NAUSHAD
                 </h4>
@@ -246,7 +264,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/ranit.jpeg" className="h-64 rounded" />
+                <img src={ranit} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   RANIT PRADHAN
                 </h4>
@@ -262,10 +280,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img
-                  src="src/images/sreesankar1.jpeg"
-                  className="h-64 rounded"
-                />
+                <img src={sreeshankar1} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SREESANKAR S
                 </h4>
@@ -276,7 +291,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-6  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/hridul.jpeg" className="h-64 rounded" />
+                <img src={hridul} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   NARIKODAN HRIDUL
                 </h4>
@@ -287,7 +302,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/ghanshyam.jpeg" className="h-64 rounded" />
+                <img src={ghanshyam} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   GHAN SHYAM
                 </h4>
@@ -297,7 +312,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/kiran.jpeg" className="h-64 rounded" />
+                <img src={kiran} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KIRAN S P
                 </h4>
@@ -307,7 +322,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/gauthamjb.jpeg" className="h-64 rounded" />
+                <img src={gautamjb} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   GAUTHAM J B
                 </h4>
@@ -317,7 +332,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/archit.jpeg" className="h-64 rounded" />
+                <img src={archit} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ARCHIT KAK
                 </h4>
@@ -333,7 +348,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/satysai.jpeg" className="h-64 rounded" />
+                <img src={satysai} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SATYA SAI N
                 </h4>
@@ -344,7 +359,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/siddharth.jpeg" className="h-64 rounded" />
+                <img src={siddharth} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SIDDHARTH REDDY
                 </h4>
@@ -365,7 +380,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/govind.jpeg" className="h-64 rounded" />
+                <img src={govind} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   GOVIND
                 </h4>
@@ -375,7 +390,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/karthik.jpeg" className="h-64 rounded" />
+                <img src={karthik} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KARTHIK G
                 </h4>
@@ -385,7 +400,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/rajask.jpeg" className="h-64 rounded" />
+                <img src={rajask} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   RAJA S K
                 </h4>
@@ -395,7 +410,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/nived.jpeg" className="h-64 rounded" />
+                <img src={nived} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   NIVED P V
                 </h4>
@@ -405,7 +420,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/drupad.jpeg" className="h-64 rounded" />
+                <img src={drupad} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   DRUPAD DEV
                 </h4>
@@ -415,7 +430,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/avanthika.jpeg" className="h-64 rounded" />
+                <img src={avanthika} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   AVANTHIKA RAJESH
                 </h4>
@@ -425,7 +440,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/swetha.jpeg" className="h-64 rounded" />
+                <img src={swetha} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SWETHA AJITH
                 </h4>
@@ -435,7 +450,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/roopa.jpeg" className="h-64 rounded" />
+                <img src={roopa} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ROOPA RAVALI
                 </h4>
@@ -456,10 +471,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img
-                  src={ashwinnambiar}
-                  className="h-64 rounded"
-                />
+                <img src={ashwinnambiar} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ASHWIN NAMBIAR
                 </h4>
@@ -473,7 +485,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/season.jpeg" className="h-64 rounded" />
+                <img src={season} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SEASON CHERIAN
                 </h4>
@@ -484,10 +496,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img
-                  src="src/images/hariprasad.jpeg"
-                  className="h-64 rounded"
-                />
+                <img src={hariprasad} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   HARIPRASAD
                 </h4>
@@ -498,7 +507,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/hari.jpeg" className="h-64 rounded" />
+                <img src={hari} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   HARI
                 </h4>
@@ -508,10 +517,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img
-                  src="src/images/karthiklade.jpeg"
-                  className="h-64 rounded"
-                />
+                <img src={karthiklade} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KARTHEEK LADE
                 </h4>
@@ -521,7 +527,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/aathira.jpeg" className="h-64 rounded" />
+                <img src={aathira} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   AATHIRA DINESAN
                 </h4>
@@ -531,7 +537,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/arya.jpeg" className="h-64 rounded" />
+                <img src={arya} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   ARYA SURENDRAN
                 </h4>
@@ -541,7 +547,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
-                <img src="src/images/amitha.jpeg" className="h-64 rounded" />
+                <img src={amitha} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   AMITHA DEEP
                 </h4>
@@ -551,7 +557,7 @@ function FeaturesBlocks() {
                 className="relative flex flex-col items-center p-5 rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2 mb-16"
                 data-aos="fade-down"
               >
-                <img src="src/images/keerthana.jpeg" className="h-64 rounded" />
+                <img src={keerthana} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   KEERTHANA K M
                 </h4>

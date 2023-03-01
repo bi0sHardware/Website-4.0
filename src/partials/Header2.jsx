@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HiMenuAlt2, RxCross2 } from "react-icons/all";
 import { Link } from "react-router-dom";
+import bios from "../images/bios.png";
 
 const TopBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const TopBar = () => {
           <div className="flex items-center justify-between py-2 md:block">
             <a href="/">
               <div className="flex flex-row gap-2">
-                <img src="src/images/bios.png" alt={"logo"} className="w-32" />
+                <img src={bios} alt={"logo"} className="w-32" />
               </div>
             </a>
             {/* HAMBURGER BUTTON FOR MOBILE */}

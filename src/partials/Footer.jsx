@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import bios from "../images/bios.png";
 
 function Footer() {
   return (
@@ -16,7 +17,7 @@ function Footer() {
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="Cruip">
                 <a>
-                  <img src="src/images/bios.png" className="h-24 mr-8 " />
+                  <img src={bios} className="h-24 mr-8 " />
                 </a>
               </Link>
             </div>
