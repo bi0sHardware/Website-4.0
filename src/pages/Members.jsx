@@ -40,6 +40,7 @@ import archit from "../images/archit.jpeg";
 //2nd years
 import satysai from "../images/satysai.jpeg";
 import siddharth from "../images/siddharth.jpeg";
+import sahithya from "../images/sahithya.png";
 import govind from "../images/govind.jpeg";
 import karthik from "../images/karthik.jpeg";
 import rajask from "../images/rajask.jpeg";
@@ -362,6 +363,16 @@ function FeaturesBlocks() {
                 <img src={siddharth} className="h-64 rounded" />
                 <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
                   SIDDHARTH REDDY
+                </h4>
+                <p className="text-gray-600 text-center">Web Security</p>
+              </div>
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src={sahithya} className="h-64 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  SAHITHYA K
                 </h4>
                 <p className="text-gray-600 text-center">Web Security</p>
               </div>
