@@ -12,7 +12,7 @@ const TopBar = () => {
         <div>
           <div className="flex items-center justify-between py-2 md:block">
             <a href="#">
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 mt-2">
                 <img src={bios} alt={"logo"} className="w-32" />
               </div>
             </a>

@@ -8,12 +8,16 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
+import Topbanner from "../partials/Topbanner";
+import Design from "../partials/Design";
 
 function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden selection:bg-lime-500 selection:text-[#111827] ">
       {/*  Site header */}
+
       <Header />
+      <Topbanner />
 
       {/* Page content */}
       <main className="flex-grow  ">

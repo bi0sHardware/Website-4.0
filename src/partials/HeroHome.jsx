@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "../utils/Modal";
 import { send } from "emailjs-com";
 import HeroImage from "../images/hero-image.png";
+import Design from "../partials/Design";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -38,6 +39,9 @@ function HeroHome() {
   return (
     <section className="relative bg-[#111827] selection:bg-lime-500 font-mono">
       {/* Illustration behind hero content */}
+      <div className="w-full h-screen absolute top-0 left-0">
+        <Design />
+      </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}

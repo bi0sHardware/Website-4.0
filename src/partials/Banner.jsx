@@ -103,7 +103,10 @@ function Banner() {
                     >
                       Submit
                     </button>
-                    <button className="bg-emerald-500 rounded text-white px-4 py-2 mt-2">
+                    <button
+                      className="bg-emerald-500 rounded text-white px-4 py-2 mt-2"
+                      onClick={() => setShowModal(false)}
+                    >
                       Close
                     </button>
                   </div>

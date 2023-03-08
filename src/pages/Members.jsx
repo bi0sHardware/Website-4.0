@@ -57,6 +57,7 @@ import aathira from "../images/aathira.jpeg";
 import arya from "../images/arya.jpeg";
 import amitha from "../images/amitha.jpeg";
 import keerthana from "../images/keerthana.jpeg";
+import Design from "../partials/Design";
 function FeaturesBlocks() {
   const [tab, setTab] = useState(1);
 
@@ -69,12 +70,16 @@ function FeaturesBlocks() {
       <main className="flex-grow ">
         {/*  Page sections */}
 
-        <section className="relative bg-[#111827] text-white  w-screen h-">
+        <section className="relative bg-[#111827] text-white  w-screen ">
+          <div className="w-full h-screen absolute top-0 left-0">
+            <Design />
+          </div>
           {/* Section background (needs .relative class on parent and next sibling elements) */}
           <div
             className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-bg-[#1e293b] pointer-events-none"
             aria-hidden="true"
           ></div>
+
           <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2"></div>
 
           <div className="relative max-w-6xl mx-auto px-4 ">
