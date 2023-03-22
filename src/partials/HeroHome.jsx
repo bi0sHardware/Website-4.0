@@ -170,7 +170,7 @@ function HeroHome() {
 
           {/* Hero image */}
           <div>
-            <div
+            {/* <div
               className="relative flex justify-center mb-8"
               data-aos="zoom-y-out"
               data-aos-delay="450"
@@ -269,10 +269,10 @@ function HeroHome() {
                 </svg>
                 <span className="ml-3">Watch the full video (2 min)</span>
               </button>
-            </div>
+            </div> */}
 
             {/* Modal */}
-            <Modal
+            {/* <Modal
               id="modal"
               ariaLabel="modal-headline"
               show={videoModalOpen}
@@ -286,7 +286,7 @@ function HeroHome() {
                   allowFullScreen
                 ></iframe>
               </div>
-            </Modal>
+            </Modal> */}
           </div>
         </div>
       </div>
