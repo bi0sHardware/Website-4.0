@@ -27,7 +27,7 @@ function Features() {
           <div
             className="absolute inset-0 bg-[#111827] pointer-events-none mb-16"
             aria-hidden="true"
-            id="about"
+            id="research"
           ></div>
           <div className="w-full h-screen absolute top-0 left-0">
             <Design />
@@ -44,7 +44,7 @@ function Features() {
                 <div class=" w-full lg:max-w-full lg:flex flex-col gap-8  ">
                   <div class=" w-full lg:max-w-full lg:flex">
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      class="border-r border-b border-l rounded-tl-lg  rounded-bl-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
                       data-aos="fade-down"
                     >
                       <div class="mb-8">
@@ -70,7 +70,7 @@ function Features() {
                       </div>
                     </div>
                     <div
-                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg  text-center overflow-hidden"
+                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-tr-lg  rounded-br-lg text-center overflow-hidden"
                       title="Mountain"
                     >
                       <svg
@@ -530,7 +530,7 @@ function Features() {
                   {/* item 2 */}
                   <div class=" w-full lg:max-w-full lg:flex">
                     <div
-                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
+                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-tl-lg  rounded-bl-lg text-center overflow-hidden"
                       title="Mountain"
                     >
                       <svg
@@ -554,7 +554,7 @@ function Features() {
                     </div>
 
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      class="border-r border-b border-l rounded-tr-lg  rounded-br-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
                       data-aos="fade-down"
                     >
                       <div class="mb-8">
@@ -582,7 +582,7 @@ function Features() {
                   {/* item 3 */}
                   <div class=" w-full lg:max-w-full lg:flex">
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      class="border-r border-b border-l rounded-tl-lg  rounded-bl-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
                       data-aos="fade-down"
                     >
                       <div class="mb-8">
@@ -609,7 +609,7 @@ function Features() {
                       </div>
                     </div>
                     <div
-                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
+                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-tr-lg  rounded-br-lg text-center overflow-hidden"
                       title="Mountain"
                       data-aos="fade-down"
                     >
@@ -635,7 +635,7 @@ function Features() {
                   {/* item 4*/}
                   <div class=" w-full lg:max-w-full lg:flex ">
                     <div
-                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
+                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-tl-lg  rounded-bl-lg text-center overflow-hidden"
                       title="Mountain"
                       data-aos="fade-down"
                     >
@@ -731,12 +731,12 @@ function Features() {
                       </svg>
                     </div>
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      class="border-r border-b border-l rounded-tr-lg  rounded-br-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
                       data-aos="fade-down"
                     >
                       <div class="mb-8">
                         <p class="text-lg font-semibold mb-2 text-gray-600 flex items-center">
-                          O T Security
+                          OT Security
                         </p>
 
                         <p class="text-gray-700 text-base">
@@ -761,7 +761,7 @@ function Features() {
                   {/* item 5*/}
                   <div class=" w-full lg:max-w-full lg:flex">
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      class="border-r border-b border-l rounded-tl-lg  rounded-bl-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
                       data-aos="fade-down"
                     >
                       <div class="mb-8">
@@ -788,7 +788,7 @@ function Features() {
                       </div>
                     </div>
                     <div
-                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
+                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-tr-lg  rounded-br-lg text-center overflow-hidden"
                       title="Mountain"
                       data-aos="fade-down"
                     >
@@ -922,7 +922,7 @@ function Features() {
                   {/* item 6*/}
                   <div class=" w-full lg:max-w-full lg:flex pb-8">
                     <div
-                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-lg text-center overflow-hidden"
+                      class="h-48 lg:h-auto lg:w-48 flex-none bg-[#1e293b] rounded-tl-lg  rounded-bl-lg text-center overflow-hidden"
                       title="Mountain"
                       data-aos="fade-down"
                     >
@@ -962,7 +962,7 @@ function Features() {
                       </svg>
                     </div>
                     <div
-                      class="border-r border-b border-l rounded-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                      class="border-r border-b border-l rounded-tr-lg  rounded-br-lg border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
                       data-aos="fade-down"
                     >
                       <div class="mb-8">

@@ -39,7 +39,7 @@ import gautamjb from "../images/gauthamjb.jpeg";
 import archit from "../images/archit.jpeg";
 //2nd years
 import satysai from "../images/satysai.jpeg";
-import siddharth from "../images/siddharth.jpeg";
+
 import sahithya from "../images/sahithya.png";
 import govind from "../images/govind.jpeg";
 import karthik from "../images/karthik.jpeg";
@@ -53,7 +53,7 @@ import roopa from "../images/roopa.jpeg";
 //alumni
 import hari from "../images/hari.jpeg";
 import karthiklade from "../images/karthiklade.jpeg";
-import aathira from "../images/aathira.jpeg";
+import aathira from "../images/aathira.png";
 import arya from "../images/arya.jpeg";
 import amitha from "../images/amitha.jpeg";
 import keerthana from "../images/keerthana.jpeg";
@@ -85,7 +85,7 @@ function FeaturesBlocks() {
           <div className="relative max-w-6xl mx-auto px-4 ">
             <div className="py-10 md:py-12">
               {/* Section header */}
-              <div className="max-w-3xl mx-auto text-center   mt-16 pb-8 md:pb-8">
+              <div className="max-w-3xl mx-auto text-center   mt-36 pb-8 md:pb-8">
                 <h2 className="h2 mb-4 text-white text-4xl  ml-4">Our Team</h2>
 
                 <h2 className="h2 mb-4 text-white text-3xl text-center ml-4 ">
@@ -361,16 +361,7 @@ function FeaturesBlocks() {
                 <p className="text-gray-600 text-center">Web Security</p>
               </div>
               {/* 1st item */}
-              <div
-                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
-                data-aos="fade-down"
-              >
-                <img src={siddharth} className="h-64 rounded" />
-                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
-                  SIDDHARTH REDDY
-                </h4>
-                <p className="text-gray-600 text-center">Web Security</p>
-              </div>
+
               <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"

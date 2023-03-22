@@ -7,7 +7,7 @@ import Design from "../partials/Design";
 
 function Features() {
   return (
-    <section className="relative bg-[#111827] text-white font-mono selection:bg-lime-500 selection:text-[#111827] ">
+    <div className="relative bg-[#111827] text-white font-mono selection:bg-lime-500 selection:text-[#111827] ">
       <div className="w-full  h-screen absolute top-0 left-0">
         <Design />
       </div>
@@ -16,7 +16,7 @@ function Features() {
         aria-hidden="true"
         id="about"
       ></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-[#111827] transform -translate-y-1/2"></div>
+      <div className="left-0 right-0 m-auto w-px p-px h-20 bg-[#111827] "></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20 flex flex-row sm:flex-col text-left">
@@ -49,7 +49,7 @@ function Features() {
           {/* Section content */}{" "}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

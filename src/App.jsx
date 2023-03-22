@@ -42,6 +42,7 @@ function App() {
         <Route path="/members" element={<Members />} />
         <Route path="/research" element={<Research />} />
         <Route path="/about" element={<About />} />
+
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/branding" element={<Branding />} />
       </Routes>

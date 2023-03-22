@@ -68,9 +68,9 @@ function Topbanner() {
           >
             <use href="#1d77c128-3ec1-4660-a7f6-26c7006705ad" />
           </svg>
-          <div class="flex flex-wrap items-center gap-y-2 gap-x-4">
-            <p class="text-sm leading-6 text-gray-900">
-              <strong class="font-semibold">COMING SOON</strong>
+          <div class="flex flex-wrap items-center gap-y-2 gap-x-4 ">
+            <p class="sm:text-sm md:text-lg leading-6 text-white">
+              Amrita Bangalore
               <svg
                 viewBox="0 0 2 2"
                 class="mx-2 inline h-0.5 w-0.5 fill-current"
@@ -78,13 +78,8 @@ function Topbanner() {
               >
                 <circle cx="1" cy="1" r="1" />
               </svg>
-              Opening in Bangalore
+              <strong class="font-semibold">COMING SOON</strong>
             </p>
-            <div className="bg-emerald-500 text-white py-1 px-2 rounded-xl ">
-              <button onClick={() => setShowModal(true)}>
-                Contact Us <span aria-hidden="true"> &rarr;</span>
-              </button>
-            </div>
           </div>
           <div class="flex flex-1 justify-end">
             <button

@@ -2,12 +2,14 @@ import { useState } from "react";
 import { HiMenuAlt2, RxCross2 } from "react-icons/all";
 import { Link } from "react-router-dom";
 import bios from "../images/bios.png";
+import Topbanner from "../partials/Topbanner";
 
 const TopBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="w-full bg-[#111827] backdrop-blur-sm md:bg-opacity-90 transition shadow-lg fixed top-0 left-0 right-0 z-50 text-white font-mono">
+      <Topbanner />
       <div className="justify-between px-8 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-2 md:block">
@@ -50,6 +52,11 @@ const TopBar = () => {
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   Research
+                </a>
+              </li>
+              <li className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110">
+                <a href="/blog" onClick={() => setIsOpen(!isOpen)}>
+                  Blog
                 </a>
               </li>
               <li className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110">

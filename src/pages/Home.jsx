@@ -8,7 +8,7 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
-import Topbanner from "../partials/Topbanner";
+
 import Design from "../partials/Design";
 
 function Home() {
@@ -17,7 +17,6 @@ function Home() {
       {/*  Site header */}
 
       <Header />
-      <Topbanner />
 
       {/* Page content */}
       <main className="flex-grow  ">

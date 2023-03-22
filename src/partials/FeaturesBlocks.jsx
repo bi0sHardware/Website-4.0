@@ -20,7 +20,7 @@ function FeaturesBlocks() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-12">
         <div className="py-10 md:py-12">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center mt-8 pb-8 md:pb-8 font-mono selection:bg-lime-500 selection:text-[#111827]">
+          <div className="max-w-3xl mx-auto text-center mt-16 pb-8 md:pb-8 font-mono selection:bg-lime-500 selection:text-[#111827]">
             <h2 className="h2 mb-4 text-white ">Our Fields of Research</h2>
             <p className="text-xl text-white ">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
