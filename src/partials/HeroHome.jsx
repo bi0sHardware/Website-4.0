@@ -3,6 +3,7 @@ import Modal from "../utils/Modal";
 import { send } from "emailjs-com";
 import HeroImage from "../images/hero-image.png";
 import Design from "../partials/Design";
+import Slider from "../partials/Carousel";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -71,36 +72,13 @@ function HeroHome() {
                 cyber-security research projects.
               </p>
               <div className="border-b width-full mx-32 border-gray-500" />
+
               <div
-                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+                className="max-w-xl py-8  mx-auto sm:max-w-none sm:flex sm:justify-center"
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
-                {/* {0 ? (
-                  <div>
-                    <div className=" bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60 md:p-0 p-3 font-mono selection:bg-lime-500 selection:text-[#111827]">
-                      <div className="bg-transparent border-2 border-white rounded-tl-lg rounded-br-lg   hover:bg-white hover:scale-110 text-white hover:text-[#111827] text-sm p-3  shadow-lg flex justify-between ">
-                        <div className="font-medium   mx-4 inline-flex ">
-                          <button
-                            type="button"
-                            onClick={() => setShowModal(true)}
-                            className="hover:text-[#111827] "
-                          >
-                            Contact Us
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ) : null} */}
-                {/* <div>
-                  <a
-                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                    href="#0"
-                  >
-                    Learn more
-                  </a>
-                </div> */}
+                <Slider />
               </div>
             </div>
           </div>
