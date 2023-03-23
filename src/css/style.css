@@ -8,7 +8,7 @@
 @import 'additional-styles/range-slider.css';
 @import 'additional-styles/toggle-switch.css';
 @import 'additional-styles/theme.css';
-
+@import 'additional-styles/404.css';
 @import 'tailwindcss/utilities';
 
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
@@ -22,3 +22,4 @@
 [x-cloak=""] {
     display: none;
 }
+
