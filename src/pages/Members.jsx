@@ -85,7 +85,7 @@ function FeaturesBlocks() {
           <div className="relative max-w-6xl mx-auto px-4 ">
             <div className="py-10 md:py-12">
               {/* Section header */}
-              <div className="max-w-3xl mx-auto text-center   mt-16 pb-8 md:pb-8">
+              <div className="max-w-3xl mx-auto text-center   mt-32 pb-8 md:pb-8">
                 <h2 className="h2 mb-4 text-white text-4xl  ml-4">Our Team</h2>
 
                 <h2 className="h2 mb-4 text-white text-3xl text-center ml-4 ">
@@ -220,11 +220,11 @@ function FeaturesBlocks() {
               <h2 className="h2 mt-24 text-center text-white text-3xl ml-4">
                 STUDENT MEMBERS
               </h2>
-              <h2 className="h2 mt-8 text-white text-xl ml-4">Fourth Years</h2>
+              {/* <h2 className="h2 mt-8 text-white text-xl ml-4">Fourth Years</h2> */}
             </div>
-            <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
-              {/* 2nd item */}
-              <div
+            {/* <div className=" mt-28 max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none"> */}
+            {/* 2nd item */}
+            {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -233,9 +233,9 @@ function FeaturesBlocks() {
                   ASWIN C
                 </h4>
                 <p className="text-gray-600 text-center">Firmware Analysis</p>
-              </div>
-              {/* 1st item */}
-              <div
+              </div> */}
+            {/* 1st item */}
+            {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -244,9 +244,9 @@ function FeaturesBlocks() {
                   ATHUL MENON
                 </h4>
                 <p className="text-gray-600 text-center">Firmware Analysis</p>
-              </div>
-              {/* 1st item */}
-              <div
+              </div> */}
+            {/* 1st item */}
+            {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -255,8 +255,8 @@ function FeaturesBlocks() {
                   INDRARAJ BISWAS
                 </h4>
                 <p className="text-gray-600 text-center">Wireless Security</p>
-              </div>
-              <div
+              </div> */}
+            {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -265,8 +265,8 @@ function FeaturesBlocks() {
                   NIDHIN NAUSHAD
                 </h4>
                 <p className="text-gray-600 text-center">Embedded Devlopment</p>
-              </div>
-              <div
+              </div> */}
+            {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -275,8 +275,8 @@ function FeaturesBlocks() {
                   RANIT PRADHAN
                 </h4>
                 <p className="text-gray-600 text-center">Embedded Devlopment</p>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
             <div>
               <h2 className="h2 mt-8  text-white text-xl ml-4">Third Years</h2>
             </div>
@@ -412,7 +412,7 @@ function FeaturesBlocks() {
                 </h4>
                 <p className="text-gray-600 text-center">Firmware Security</p>
               </div>
-              <div
+              {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -421,7 +421,7 @@ function FeaturesBlocks() {
                   RAJA S K
                 </h4>
                 <p className="text-gray-600 text-center">Hardware Security</p>
-              </div>
+              </div> */}
               <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
@@ -442,7 +442,7 @@ function FeaturesBlocks() {
                 </h4>
                 <p className="text-gray-600 text-center">Automotive Security</p>
               </div>
-              <div
+              {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -451,7 +451,7 @@ function FeaturesBlocks() {
                   AVANTHIKA RAJESH
                 </h4>
                 <p className="text-gray-600 text-center">OT Security</p>
-              </div>
+              </div> */}
               <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
