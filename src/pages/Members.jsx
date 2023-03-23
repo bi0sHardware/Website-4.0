@@ -49,6 +49,8 @@ import drupad from "../images/drupad.jpeg";
 import avanthika from "../images/avanthika.jpeg";
 import swetha from "../images/swetha.jpeg";
 import roopa from "../images/roopa.jpeg";
+import mrudula from "../images/mrudula.png";
+import abhijith from "../images/abhijith.png";
 
 //alumni
 import hari from "../images/hari.jpeg";
@@ -361,7 +363,7 @@ function FeaturesBlocks() {
                 <p className="text-gray-600 text-center">Web Security</p>
               </div>
               {/* 1st item */}
-              <div
+              {/* <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
               >
@@ -370,7 +372,7 @@ function FeaturesBlocks() {
                   SIDDHARTH REDDY
                 </h4>
                 <p className="text-gray-600 text-center">Web Security</p>
-              </div>
+              </div> */}
               <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
                 data-aos="fade-down"
@@ -431,6 +433,26 @@ function FeaturesBlocks() {
                   NIVED P V
                 </h4>
                 <p className="text-gray-600 text-center">Hardware Security</p>
+              </div>
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src={abhijith} className="h-64 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  ABHIJITH C B
+                </h4>
+                <p className="text-gray-600 text-center">Hardware Security</p>
+              </div>
+              <div
+                className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
+                data-aos="fade-down"
+              >
+                <img src={mrudula} className="h-64 rounded" />
+                <h4 className="text-xl mt-8 font-bold leading-snug tracking-tight mb-1">
+                  MRUDULA POTTA
+                </h4>
+                <p className="text-gray-600 text-center">Firmware Analysis</p>
               </div>
               <div
                 className="relative flex flex-col items-center p-5  rounded shadow-xl border-gray-700 rounded-tl-lg rounded-br-lg border-2"
