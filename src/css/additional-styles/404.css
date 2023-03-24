@@ -1,9 +1,10 @@
 
 @import url(https://fonts.googleapis.com/css?family=Gilda+Display);
 
-html {
-  background-color:black;
-  color: white;
+
+.content-html {
+ 
+  color: black;
   overflow: hidden;
   height: 100%;
   -webkit-user-select: none;
@@ -31,8 +32,8 @@ html {
   overflow: default;
 }
 
-body:after {
-  content: 'error 404';
+.content-body:after {
+  content: 'bi0s error 404';
   font-family: OCR-A;
   font-size: 100px;
   
@@ -45,12 +46,12 @@ body:after {
   left: 0;
   right: 35%;
   opacity: 0;
-  color: white;
+  color: black;
   -webkit-animation: noise-1 .2s linear infinite;
           animation: noise-1 .2s linear infinite;
 }
-body:before {
-  content: 'error 404';
+.content-body:before {
+  content: 'bi0s error 404';
   font-family: OCR-A;
   font-size: 100px;
   
@@ -63,7 +64,7 @@ body:before {
   left: 0;
   right: 35%;
   opacity: 0;
-  color: white;
+  color: black;
   -webkit-animation: noise-2 .2s linear infinite;
           animation: noise-2 .2s linear infinite;
 }
@@ -83,7 +84,7 @@ body:before {
 }
 
 .info:before {
-  content: 'file not found';
+  content: 'oops';
   font-family: OCR-A;
   font-size: 100px;
   text-align: center;
@@ -95,13 +96,13 @@ body:before {
   left: 40px;
   right: 100px;
   opacity: 0;
-  color: white;
+  color: black;
   -webkit-animation: noise-2 .2s linear infinite;
           animation: noise-2 .2s linear infinite;
 }
 
 .info:after {
-  content: 'file not found';
+  content: 'oops';
   font-family: OCR-A;
   font-size: 100px;
   text-align: center;
@@ -113,7 +114,7 @@ body:before {
   left: 40px;
   right: 0;
   opacity: 0;
-  color: white;
+  color: black;
   -webkit-animation: noise-1 .2s linear infinite;
           animation: noise-1 .2s linear infinite;
 }
@@ -184,7 +185,7 @@ body:before {
   position: absolute;
 }
 code {
-  color: white;
+  color: black;
 }
 span.blue {
   color: #48beef;
