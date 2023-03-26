@@ -22,7 +22,7 @@ function Features() {
         <div className="pt-12 md:pt-20 flex flex-row sm:flex-col text-left">
           {/* Section header */}
           <div className=" flex flex-col">
-            <div className="max-w-3xl text-left pb-10 md:pb-16 mt-28 ">
+            <div className="max-w-3xl text-left pb-10 md:pb-8 mt-24 ">
               <h1 className="h2 mb-4">About bi0s Hardware</h1>
               <p className="text-lg text-white">
                 Team bi0s is a cyber-security enthusiast club and research group
@@ -37,7 +37,7 @@ function Features() {
                 specialized teams in 10+ cyber-security focus areas.
               </p>
             </div>
-            <div className=" mb-32">
+            <div className=" mb-3">
               <a
                 className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"
                 href="/about"

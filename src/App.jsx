@@ -15,6 +15,7 @@ import Research from "./pages/Research";
 import About from "./pages/About";
 import Branding from "./pages/Branding";
 import NotFound from "./pages/NotFound";
+import Gallery from "./pages/Gallery";
 
 function App() {
   const location = useLocation();
@@ -45,7 +46,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/branding" element={<Branding />} />
-        <Route path="*" element={<NotFound/>} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </>
   );

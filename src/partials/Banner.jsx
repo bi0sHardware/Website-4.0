@@ -8,7 +8,7 @@ function Banner() {
   const [showContact, setShowContact] = useState(true);
   const [toSend, setToSend] = useState({
     from_name: "",
-    to_name: "",
+    // to_name: "",
     message: "",
     reply_to: "",
   });
@@ -19,7 +19,7 @@ function Banner() {
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setShowModal(false);
-        setShowContact(false);
+        setShowContact(true);
       })
       .catch((err) => {
         console.log("FAILED...", err);
@@ -35,7 +35,7 @@ function Banner() {
   return (
     <>
       {showContact ? (
-        <div className="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60 md:p-0 p-3 font-mono selection:bg-lime-500 selection:text-[#111827]">
+        <div className="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60 md:p-0 p-3 font-mono  selection:bg-lime-500 selection:text-[#111827]">
           <div className="bg-emerald-600 hover:bg-emerald-400 hover:scale-110 text-slate-50 text-sm p-3 rounded-lg shadow-lg flex justify-between">
             <div className="font-medium text-white mx-2 inline-flex ">
               <button type="button" onClick={() => setShowModal(true)}>
@@ -46,11 +46,11 @@ function Banner() {
         </div>
       ) : null}
       {showModal ? (
-        <div className="flex justify-center items-center  fixed inset-0 z-50 outline-none focus:outline-none opacity-95 sm:rounded">
-          <div className="relative w-auto my-6 mx-auto max-w-3xl">
-            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none ">
-              <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
-                <h3 className="text-3xl font=semibold mr-4 text-[#111827]">
+        <div className="flex justify-center items-center fixed inset-0 z-50 outline-none focus:outline-none text-white sm:rounded backdrop-blur-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
+          <div className="relative w-2/3 my-6 mx-auto max-w-3xl">
+            <div className="border-0 rounded-lg shadow-lg relative opacity-90 flex flex-col w-full bg-slate-500 outline-none focus:outline-none ">
+              <div className="flex items-start justify-between p-5 rounded-t  drop-shadow-xl">
+                <h3 className="font=semibold mr-4 text-transparent bg-clip-text  font-semibold text-5xl bg-gradient-to-br from-white to-gray-200">
                   Contact Us
                 </h3>
                 {/* <ButtonMailto
@@ -59,32 +59,32 @@ function Banner() {
               /> */}
                 <form onSubmit={onSubmit}>
                   <div className="flex flex-col">
-                    <label>Your name</label>
+                    <label>Name</label>
                     <input
                       type="text"
                       name="from_name"
-                      placeholder="from name"
+                      placeholder="Jack the Ripper"
                       value={toSend.from_name}
                       onChange={handleChange}
-                      className="rounded-lg"
+                      className="rounded-lg w-88 text-black"
                     />
-                    <label>To name</label>
-                    <input
+                    {/* <label>To name</label> */}
+                    {/* <input
                       type="text"
                       name="to_name"
                       placeholder="to name"
                       value={toSend.to_name}
                       onChange={handleChange}
                       className="rounded-lg"
-                    />
-                    <label>Your email</label>
+                    /> */}
+                    <label>Email</label>
                     <input
                       type="text"
                       name="reply_to"
-                      placeholder="Your email"
+                      placeholder="Serialheckerr@nomail.com"
                       value={toSend.reply_to}
                       onChange={handleChange}
-                      className="rounded-lg"
+                      className="rounded-lg  text-black"
                     />
                     <label>Message</label>
                     <textarea
@@ -93,7 +93,7 @@ function Banner() {
                       placeholder="Your message"
                       value={toSend.message}
                       onChange={handleChange}
-                      className="rounded-lg"
+                      className="rounded-lg  text-black"
                     />
                   </div>
                   <div className="flex gap-4">
