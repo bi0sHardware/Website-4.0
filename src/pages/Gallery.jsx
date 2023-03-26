@@ -42,14 +42,14 @@ function Gallery() {
                       <div className="relative group flex justify-center items-center h-full w-full">
                         <img
                           className="object-center object-cover h-full w-full"
-                          src="https://i.ibb.co/SXZvYHs/irene-kredenets-DDqx-X0-7v-KE-unsplash-1.png"
+                          src="https://res.cloudinary.com/dhybspk1v/image/upload/v1679671742/bi0shardware/img1_zclg4m.jpg"
                           alt="shoe-image"
                         />
                       </div>
                       <div className="relative group flex justify-center items-center h-full w-full">
                         <img
                           className="object-center object-cover h-full w-full"
-                          src="https://i.ibb.co/Hd1pVxW/louis-mornaud-Ju-6-TPKXd-Bs-unsplash-1-2.png"
+                          src="https://res.cloudinary.com/dhybspk1v/image/upload/v1679671739/bi0shardware/img3_gukeq0.jpg"
                           alt="watch-image"
                         />
                       </div>

@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
 
 const featuredProducts = [
-  "https://images.unsplash.com/photo-1679436316513-9cb8902edede?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60",
-  "https://images.unsplash.com/photo-1679459863004-db819b9b9d0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60",
-  "https://images.unsplash.com/photo-1679381457571-ade79f46c61c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  "https://res.cloudinary.com/dhybspk1v/image/upload/v1679671747/bi0shardware/img9_kc17tp.jpg",
+  "https://res.cloudinary.com/dhybspk1v/image/upload/v1679671745/bi0shardware/img12_bmvout.jpg",
+  "https://res.cloudinary.com/dhybspk1v/image/upload/v1679671740/bi0shardware/img2_bijpoq.jpg",
 ];
 
 let count = 0;
