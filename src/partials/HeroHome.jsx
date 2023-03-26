@@ -5,7 +5,6 @@ import HeroImage from "../images/hero-image.png";
 import Design from "../partials/Design";
 import Slider from "../partials/Carousel";
 
-
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
   const [bannerOpen, setBannerOpen] = useState(true);
@@ -48,7 +47,7 @@ function HeroHome() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
-          {/* Section header */}         
+          {/* Section header */}
           <div className="text-center pb-12 md:pb-16  ">
             <h1
               className=" text-5xl md:text-6xl font-extrabold  leading-tighter tracking-tighter mb-4 text-white"
