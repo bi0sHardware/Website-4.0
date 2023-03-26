@@ -46,13 +46,13 @@ function Features() {
           <div className="w-full h-screen absolute top-0 left-0">
             <Design />
           </div>
-          <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-[#111827] transform -translate-y-1/2"></div>
+          <div className="relative left-0 right-0 m-auto w-px p-px h-20 flex justify-center bg-[#111827] transform -translate-y-1/2 "></div>
 
-          <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="pt-12 md:pt-20 flex flex-row  text-left">
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
+            <div className="pt-8 md:pt-8 flex flex-col  text-left">
               {/* Section header */}
-              <div className="max-w-3xl text-left  pb-10 md:pb-16 mt-28 ">
-                <h1 className="h2 mb-4">About bi0s Hardware</h1>
+              <div className="max-w-screen text-left  pb-10 md:pb-16 mt-10 ">
+                <h1 className="max-w-screen h2 mb-4">About bi0s Hardware</h1>
                 <p className="text-lg text-white">
                   Team bi0s is a cyber-security enthusiast club and research
                   group from Amrita Vishwa Vidyapeetham (University), India. The
@@ -67,6 +67,17 @@ function Features() {
                   focus areas.
                 </p>
               </div>
+              <div className="max-w-screen text-left  pb-10 md:pb-16  ">
+                <h1 className="max-w-screen h2 mb-4">How we function ?</h1>
+                <p className="text-lg text-white">
+                  The team functions as a family, and uses a mentor mentee model
+                  wherein senior students train and pass on experience & skills
+                  they gained to their junior mentees. This happens through out
+                  their years at the community, and is facilitated through
+                  various activities the club organizes & events and contests it
+                  participates as a team.
+                </p>
+              </div>
               {/* Section content */} {/* Content */}
               {/* Tabs items */}
               <div
@@ -74,13 +85,13 @@ function Features() {
                 data-aos="zoom-y-out"
                 ref={tabs}
               >
-                <div className="relative flex flex-col text-right lg:text-right"></div>
+                <div className="relative flex flex-col  justify-center lg:text-right"></div>
               </div>
             </div>
-            <div className="max-w-3xl sm:w-full pb-10 md:pb-16 mt-28  transition ease-in-out delay-150 hover:scale-110   duration-300">
+            {/* <div className="max-w-3xl sm:w-full pb-10 md:pb-16 mt-28   transition ease-in-out delay-150  duration-300">
               <div
                 data-aos="fade-right"
-                className=" text-center text-lg p-6 rounded  transition duration-300 ease-in-out mb-3 hover:shadow-md  hover:bg-gray-300 hover:text-[#111827] border-2 border-double border-white 
+                className=" text-center text-lg p-6 rounded  transition duration-300 ease-in-out mb-3 hover:shadow-md    border-2 border-double border-white 
               "
               >
                 <h1 className="h2 mb-4 text-center mt-4 ">How we function?</h1>
@@ -93,8 +104,8 @@ function Features() {
                   participates as a team.
                 </p>
               </div>
-            </div>
-            <div className="max-w-3xl text-left pb-10 md:pb-16 mt-28 ">
+            </div> */}
+            <div className="max-w-3xl text-left    ">
               <h1 className="h2 mb-4">What do we do?</h1>
               <p className="text-lg text-white">
                 Here are some of the things our members do:
@@ -103,11 +114,10 @@ function Features() {
                     className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 md:mt-6"
                     data-aos="fade-right"
                   >
-                    <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8 text-gray-400 "></div>
-                    <a
-                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-5 ${
+                    {/* <a
+                      className={`flex items-center text-lg p-5 rounded  transition duration-300 ease-in-out hover:scale-110 mb-5 ${
                         tab !== 2
-                          ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                          ? " shadow-md  hover:shadow-lg"
                           : "bg-gray-200 border-transparent"
                       }`}
                       href="#0"
@@ -115,124 +125,79 @@ function Features() {
                         e.preventDefault();
                         setTab(1);
                       }}
-                    >
-                      <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
-                          Learning & Researching on various Cyber Security
-                          fields
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-5 ${
-                        tab !== 2
-                          ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                          : "bg-gray-200 border-transparent"
-                      }`}
-                      href="#0"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTab(1);
-                      }}
-                    >
-                      <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
-                          Participating & organizing CTFs across the world
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out hover:scale-110 mb-5 ${
-                        tab !== 2
-                          ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                          : "bg-gray-200 border-transparent"
-                      }`}
-                      href="#0"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTab(1);
-                      }}
-                    >
-                      <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
-                          Organizing workshops & training programmes
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
-                        tab !== 2
-                          ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                          : "bg-gray-200 border-transparent"
-                      }`}
-                      href="#0"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTab(1);
-                      }}
-                    >
-                      <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
-                          Contributing to open-source security tools
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      className={`flex items-center text-lg p-5  hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
-                        tab !== 2
-                          ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                          : "bg-gray-200 border-transparent"
-                      }`}
-                      href="#0"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTab(1);
-                      }}
-                    >
-                      <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
-                          Collaborating in international cyber-security research
-                          projects
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      className={`flex items-center text-lg p-5 hover:scale-110 rounded border transition duration-300 ease-in-out mb-5 ${
-                        tab !== 2
-                          ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                          : "bg-gray-200 border-transparent"
-                      }`}
-                      href="#0"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTab(1);
-                      }}
-                    >
-                      <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
-                          Penetration testing, bug-bounty hunting & submitting
-                          CVEs
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      className={`flex items-center text-lg p-5 rounded hover:scale-110 border transition duration-300 ease-in-out mb-5 ${
-                        tab !== 2
-                          ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                          : "bg-gray-200 border-transparent"
-                      }`}
-                      href="#0"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTab(1);
-                      }}
-                    >
-                      <div>
-                        <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
-                          Providing Cyber Security Consultancy Services
-                        </div>
-                      </div>
-                    </a>
+                    > */}
+                    <div>
+                      <ul>
+                        <li className="flex flex-row">
+                          <div>
+                            {" "}
+                            <p>--{">"} </p>
+                          </div>
+
+                          <div className=" ml-3  leading-snug tracking-tight mb-1 text-white">
+                            Learning & Researching on various Cyber Security
+                            fields
+                          </div>
+                        </li>
+                        <li className="flex flex-row">
+                          <div>
+                            {" "}
+                            <p>--{">"} </p>
+                          </div>
+                          <div className=" ml-3  leading-snug tracking-tight mb-1 text-white">
+                            Participating & organizing CTFs across the world
+                          </div>
+                        </li>
+                        <li className="flex flex-row">
+                          <div>
+                            {" "}
+                            <p>--{">"} </p>
+                          </div>
+                          <div className=" ml-3  leading-snug tracking-tight mb-1 text-white">
+                            Organizing workshops & training programmes
+                          </div>
+                        </li>
+                        <li className="flex flex-row">
+                          <div>
+                            {" "}
+                            <p>--{">"} </p>
+                          </div>
+                          <div className=" ml-3  leading-snug tracking-tight mb-1 text-white">
+                            Contributing to open-source security tools
+                          </div>
+                        </li>
+                        <li className="flex flex-row">
+                          <div>
+                            {" "}
+                            <p>--{">"} </p>
+                          </div>
+                          <div className=" ml-3  leading-snug tracking-tight mb-1 text-white">
+                            Collaborating in international cyber-security
+                            research projects
+                          </div>
+                        </li>
+                        <li className="flex flex-row">
+                          <div>
+                            {" "}
+                            <p>--{">"} </p>
+                          </div>
+                          <div className=" ml-3  leading-snug tracking-tight mb-1 text-white">
+                            Penetration testing, bug-bounty hunting & submitting
+                            CVEs
+                          </div>
+                        </li>
+                        <li className="flex flex-row">
+                          <div>
+                            {" "}
+                            <p>--{">"} </p>
+                          </div>
+                          <div className=" ml-3  leading-snug tracking-tight mb-1 text-white">
+                            Providing Cyber Security Consultancy Services
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* </a> */}
                   </div>
                   <div
                     className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
