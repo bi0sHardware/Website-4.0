@@ -59,6 +59,11 @@ const TopBar = () => {
                   Members
                 </a>
               </li>
+              <li className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110">
+                <a href="/Gallery" onClick={() => setIsOpen(!isOpen)}>
+                  Members
+                </a>
+              </li>
               {/* <li className="whitespace-nowrap  text-lg font-bold ">
                 <Link
                   to="/signin"
