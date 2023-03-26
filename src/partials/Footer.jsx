@@ -32,7 +32,7 @@ function Footer() {
           {/* 4th block */}
 
           {/* 5th block */}
-          <div className="sm:col-span-8 md:col-span-8 lg:col-span-6 mt-10 flex flex-row sm:flex-wrap ">
+          <div className="sm:col-span-8 md:col-span-8 lg:col-span-6 mt-10 flex flex-row sm:flex-wrap  ">
             <div>
               <p className="text-sm text-gray-400 mb-4 ">
                 © Team bi0s Hardware 2023. All rights reserved.
