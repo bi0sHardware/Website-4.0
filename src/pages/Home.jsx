@@ -17,7 +17,6 @@ function Home() {
       {/*  Site header */}
 
       <Header />
-      <Topbanner />
 
       {/* Page content */}
       <main className="flex-grow  ">
