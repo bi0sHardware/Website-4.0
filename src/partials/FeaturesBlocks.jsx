@@ -21,6 +21,37 @@ function FeaturesBlocks() {
         <div className="py-10 md:py-12">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center mt-8 pb-8 md:pb-8 font-mono selection:bg-lime-500 selection:text-[#111827]">
+            <div class="absolute  inset-0 h-full z-40  overflow-hidden">
+              <svg
+                class="absolute  opacity-20 top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+                aria-hidden="true"
+              >
+                <defs>
+                  <pattern
+                    id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                    width="200"
+                    height="200"
+                    x="50%"
+                    y="-1"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <path d="M100 200V.5M.5 .5H200" fill="none" />
+                  </pattern>
+                </defs>
+                <svg x="100%" y="-1">
+                  <path
+                    d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                    stroke-width="0"
+                  />
+                </svg>
+                <rect
+                  width="100%"
+                  height="100%"
+                  stroke-width="0"
+                  fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+                />
+              </svg>
+            </div>
             <h2 className="h2 mb-4 text-white ">Our Fields of Research</h2>
             <p className="text-xl text-white ">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -284,6 +315,7 @@ function FeaturesBlocks() {
           More
         </a>
       </div>
+
       <div className="mx-8   text-white flex  ml-16 font-mono selection:bg-lime-500 selection:text-[#111827]  ">
         <div
           className="max-w-xl md:max-w-none  md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 mb-16  "
