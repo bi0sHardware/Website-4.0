@@ -78,7 +78,7 @@ function FeaturesBlocks() {
           </div>
           {/* Section background (needs .relative class on parent and next sibling elements) */}
           <div
-            className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-bg-[#1e293b] pointer-events-none"
+            className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0  pointer-events-none"
             aria-hidden="true"
           ></div>
 
@@ -100,47 +100,43 @@ function FeaturesBlocks() {
                   >
                     <img
                       src={vipinsir}
-                      className="h-96  border-gray-700 border-2 pt-4 pb-4 pl-4 pr-4 "
+                      className="h-96  border-gray-700 border-2  pb-4 pl-4 pr-4 "
                     />
                   </div>
                   <div className="w-full">
-                    <h2 className="  text-2xl md:text-left    font-bold  text-gray-300">
+                    <h2 className="  text-sm md:text-left    font-bold  text-gray-300">
                       Th3_M3nt0r
                     </h2>
-                    <h3 className="text-white md:text-left  text-2xl  font-bold mt-2">
+                    <h3 className="text-white md:text-left  text-2xl  font-bold ">
                       VIPIN PAVITHRAN
                     </h3>
-                    <p className=" mt-4  text-gray-300   md:text-left   ">
-                      Vipin Pavithran is a cyber-security veteran and takes deep
-                      passion in mentoring students at Amrita Vishwa
-                      Vidyapeetham. Prior to coming to Amritapuri, he has worked
-                      for over 10 years in the software industry in the USA &
-                      UK. Being passionate about helping students to develop
-                      their talent and to make them reach their potential, he
-                      founded the internationally recognised student clubs -
-                      amFOSS, Team bi0s and Team Shakti, and today mentors over
-                      300 engineering students directly through these clubs.
-                      team bi0s was amongst India's first CTF team when it was
-                      formed in 2007, and it was this team that founded the
-                      InCTF in 2010, which was the first-ever CTF contest to be
-                      organized in India.
+                    <p className=" s  text-gray-300   md:text-left   ">
+                      Vipin Pavithran is a cyber-security veteran with over 10
+                      years of experience in the software industry in the USA &
+                      UK. He is passionate about mentoring students and has
+                      founded several internationally recognised student clubs
+                      such as amFOSS, Team bi0s and Team Shakti, directly
+                      mentoring over 300 engineering students. In 2007, he
+                      founded Team bi0s, one of India's first CTF (Capture the
+                      Flag) teams. The team founded the InCTF in 2010, the
+                      first-ever CTF contest to be organised in India.
                     </p>
-                    <div className="flex flex-row gap-4 mt-8 text-4xl justify-center md:justify-end">
+                    <div className="flex flex-row gap-4 mt-8 text-4xl justify-center md:justify-start">
                       <a href="https://twitter.com/th3_m3nt0r">
-                        <BsTwitter />
+                        <BsTwitter className="h-8" />
                       </a>
                       <a href="https://www.linkedin.com/in/vipinpavithran/">
-                        <BsLinkedin />
+                        <BsLinkedin className="h-8" />
                       </a>
 
-                      <MdMessage />
+                      <MdMessage className="h-8" />
                     </div>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h2 className="h2 mt-24 text-center text-white text-3xl ml-4">
+                <h2 className="h2 mt-5 text-center text-white text-3xl ml-4">
                   Co-Founders
                 </h2>
               </div>

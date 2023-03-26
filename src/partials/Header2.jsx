@@ -12,9 +12,9 @@ const TopBar = () => {
       <Topbanner />
       <div className="justify-between px-8 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-2 md:block">
+          <div className="flex items-center justify-between  md:block">
             <a href="/">
-              <div className="flex flex-row gap-2 mt-2">
+              <div className="flex flex-row gap-2 ">
                 <img src={bios} alt={"logo"} className="w-32" />
               </div>
             </a>
@@ -61,7 +61,7 @@ const TopBar = () => {
               </li>
               <li className="font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out hover:scale-110">
                 <a href="/Gallery" onClick={() => setIsOpen(!isOpen)}>
-                  Members
+                  Gallery
                 </a>
               </li>
               {/* <li className="whitespace-nowrap  text-lg font-bold ">

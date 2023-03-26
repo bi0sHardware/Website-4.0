@@ -2,17 +2,19 @@ import { useState } from "react";
 import { HiMenuAlt2, RxCross2 } from "react-icons/all";
 import { Link } from "react-router-dom";
 import bios from "../images/bios.png";
+import Topbanner from "./Topbanner";
 
 const TopBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="w-full bg-[#111827] backdrop-blur-sm md:bg-opacity-50 transition shadow-lg fixed top-0 left-0 right-0 z-50 text-white font-mono">
+      <Topbanner />
       <div className="justify-between px-8 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-2 md:block">
+          <div className="flex items-center justify-between  md:block">
             <a href="#">
-              <div className="flex flex-row gap-2 mt-2">
+              <div className="flex flex-row gap-2 ">
                 <img src={bios} alt={"logo"} className="w-32" />
               </div>
             </a>

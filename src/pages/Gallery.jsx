@@ -1,13 +1,13 @@
 import React from "react";
 
-import Header from "../partials/Header";
+import Header2 from "../partials/Header2";
 import Banner from "../partials/Banner";
 import Carousel from "../partials/Carousel";
 function Gallery() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden font-mono bg-[#0f172a] text-white">
       {/*  Site header */}
-      <Header />
+      <Header2 />
       {/*  Page content */}
       <section>
         <br />
@@ -89,7 +89,6 @@ function Gallery() {
                 </div>
               </div>
             </div>
-            
           </div>
         </main>
       </section>
