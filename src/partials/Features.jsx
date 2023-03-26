@@ -49,7 +49,7 @@ function Features() {
                   </defs>
                 </svg>
               </div>
-              <div class="absolute  inset-0 h-full -z-10 overflow-hidden">
+              <div class="absolute  inset-0 h-full z-0 overflow-hidden">
                 <svg
                   class="absolute  opacity-20 top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
                   aria-hidden="true"
@@ -93,9 +93,9 @@ function Features() {
                 specialized teams in 10+ cyber-security focus areas.
               </p>
             </div>
-            <div className=" mb-3">
+            <div className=" mb-3 z-50">
               <a
-                className="btn text-white z-50 border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"
+                className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"
                 href="/about"
               >
                 More
