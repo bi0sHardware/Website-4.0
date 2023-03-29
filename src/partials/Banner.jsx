@@ -38,100 +38,11 @@ function Banner() {
         <div className="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60 md:p-0 p-3 font-mono  selection:bg-lime-500 selection:text-[#111827]">
           <div className="bg-emerald-600 hover:bg-emerald-400 hover:scale-110 text-slate-50 text-sm p-3 rounded-lg shadow-lg flex justify-between">
             <div className="font-medium text-white mx-2 inline-flex ">
-              <button type="button" onClick={() => setShowModal(true)}>
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-      ) : null}
-      {showModal ? (
-        <div className="flex justify-center items-center fixed inset-0 z-50 outline-none focus:outline-none text-white sm:rounded backdrop-blur-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
-          <div className="relative w-2/3 my-6 max-w-xl">
-            <div className="border-0 rounded-lg shadow-lg relative opacity-90 flex flex-col w-full bg-slate-500 outline-none focus:outline-none ">
-              <h3 className="font=semibold text-transparent bg-clip-text  flex align-items-center justify-center font-semibold text-5xl bg-gradient-to-br from-white to-gray-200">
-                Contact Us
-              </h3>
-              <div className="flex items-center justify-center p-5 max-w-3xl min-w-xl rounded-t  drop-shadow-xl">
-                {/* <ButtonMailto
-                label="Contact Us"
-                mailto="mailto:aythihas2003@gmail.com"
-              /> */}
-                <form onSubmit={onSubmit}>
-                  <div className="flex flex-col ">
-                    <label>Name</label>
-                    <input
-                      type="text"
-                      name="from_name"
-                      placeholder="Jack the Ripper"
-                      value={toSend.from_name}
-                      onChange={handleChange}
-                      className="rounded-lg w-full text-black "
-                    />
-                    {/* <label>To name</label> */}
-                    {/* <input
-                      type="text"
-                      name="to_name"
-                      placeholder="to name"
-                      value={toSend.to_name}
-                      onChange={handleChange}
-                      className="rounded-lg"
-                    /> */}
-                    <label>Email</label>
-                    <input
-                      type="text"
-                      name="reply_to"
-                      placeholder="Serialheckerr@email.com"
-                      value={toSend.reply_to}
-                      onChange={handleChange}
-                      className="rounded-lg  text-black"
-                    />
-                    <label>Message</label>
-                    <textarea
-                      type="text"
-                      name="message"
-                      placeholder="Your message"
-                      value={toSend.message}
-                      onChange={handleChange}
-                      className="rounded-lg  text-black"
-                    />
-                  </div>
-                  <div className="flex gap-4">
-                    <button
-                      type="submit"
-                      className=" rounded text-white px-4 py-2 mt-2"
-                    >
-                      <a href="#_" class="relative inline-block text-lg group">
-                        <span class="relative z-10 block px-3 py-2 overflow-hidden font-medium leading-tight text-black transition-colors duration-300 ease-out border-2 border-black rounded-lg group-hover:text-white">
-                          <span class="absolute inset-0 w-full h-full px-3 py-2 rounded-lg bg-gray-50"></span>
-                          <span class="absolute left-0 w-40 h-40 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-emerald-600 group-hover:-rotate-180 ease"></span>
-                          <span class="relative">Submit</span>
-                        </span>
-                        <span
-                          class="absolute bottom-0 right-0 w-full h-10 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-black rounded-lg group-hover:mb-0 group-hover:mr-0"
-                          data-rounded="rounded-lg"
-                        ></span>
-                      </a>
-                    </button>
-                    <button
-                      className="rounded text-white px-4 py-2 mt-2"
-                      onClick={() => setShowModal(false)}
-                    >
-                      <a href="#_" class="relative inline-block text-lg group">
-                        <span class="relative z-10 block px-3 py-2 overflow-hidden font-medium leading-tight text-slate-800 transition-colors duration-300 ease-out border-2 border-slate-800 rounded-lg group-hover:text-white">
-                          <span class="absolute inset-0 w-full h-full px-3 py-2 rounded-lg bg-gray-50"></span>
-                          <span class="absolute left-0 w-40 h-40 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-red-600 group-hover:-rotate-180 ease"></span>
-                          <span class="relative">Close</span>
-                        </span>
-                        <span
-                          class="absolute bottom-0 right-0 w-full h-10 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-slate-800 rounded-lg group-hover:mb-0 group-hover:mr-0"
-                          data-rounded="rounded-lg"
-                        ></span>
-                      </a>
-                    </button>
-                  </div>
-                </form>
-              </div>
+              <a href="mailto:aythihas2003@gmail.com">
+                <button type="button" onClick={() => setShowModal(true)}>
+                  Contact us
+                </button>
+              </a>
             </div>
           </div>
         </div>
