@@ -16,6 +16,7 @@ import About from "./pages/About";
 import Branding from "./pages/Branding";
 import NotFound from "./pages/NotFound";
 import Gallery from "./pages/Gallery";
+import Join from "./pages/Join";
 
 function App() {
   const location = useLocation();
@@ -48,6 +49,7 @@ function App() {
         <Route path="/branding" element={<Branding />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/join" element={<Join />} />
       </Routes>
     </>
   );

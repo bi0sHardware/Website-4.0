@@ -22,7 +22,7 @@ function Features() {
         <div className="pt-12 md:pt-20 flex flex-row sm:flex-col text-left">
           {/* Section header */}
           <div className=" flex flex-col">
-            <div className="max-w-3xl text-left pb-10 md:pb-8 mt-24 ">
+            <div className="max-w-3xl text-left pb-10 md:pb-8 mt-28 ">
               <h1 className="h2 mb-4">About bi0s Hardware</h1>
               <div className="absolute inset-x-0 top-[-10rem] z-40  transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
                 <svg
@@ -93,7 +93,7 @@ function Features() {
                 specialized teams in 10+ cyber-security focus areas.
               </p>
             </div>
-            <div className=" mb-3 z-50">
+            <div className=" mb-18 z-50">
               <a
                 className="btn text-white  border-white w-full mb-4  sm:w-auto sm:mb-0 rounded-tl-xl rounded-br-xl hover:bg-white hover:scale-110 hover:text-[#111827]"
                 href="/about"

@@ -12,7 +12,6 @@ function HeroHome() {
   const [showContact, setShowContact] = useState(true);
   const [toSend, setToSend] = useState({
     from_name: "",
-    to_name: "",
     message: "",
     reply_to: "",
   });

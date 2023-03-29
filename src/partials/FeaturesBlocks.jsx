@@ -17,46 +17,15 @@ function FeaturesBlocks() {
       ></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-[#1e293b] transform translate-y-1/2 "></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-12">
-        <div className="py-10 md:py-12">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-20">
+        <div className="py-24 md:py-12">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center mt-8 pb-8 md:pb-8 font-mono selection:bg-lime-500 selection:text-[#111827]">
-            <div class="absolute  inset-0 h-full z-40  overflow-hidden">
-              <svg
-                class="absolute  opacity-20 top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-                    width="200"
-                    height="200"
-                    x="50%"
-                    y="-1"
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path d="M100 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <svg x="100%" y="-1">
-                  <path
-                    d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-                    stroke-width="0"
-                  />
-                </svg>
-                <rect
-                  width="100%"
-                  height="100%"
-                  stroke-width="0"
-                  fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
-                />
-              </svg>
-            </div>
-            <h2 className="h2 mb-4 text-white ">Our Fields of Research</h2>
+            <h2 className="h2 mb-4  text-white ">Our Fields of Research</h2>
             <p className="text-xl text-white ">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-              cupidatat.
+              Our research domains in hardware security involve the development
+              and analysis of secure hardware systems and the detection and
+              prevention of hardware-level attacks.
             </p>
           </div>
 
@@ -99,11 +68,8 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Embedded Systems
+                Embedded Security
               </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
             </div>
 
             {/* 2nd item */}
@@ -142,9 +108,6 @@ function FeaturesBlocks() {
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
                 OT Security
               </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
             </div>
 
             {/* 3rd item */}
@@ -176,9 +139,6 @@ function FeaturesBlocks() {
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
                 Wireless Security
               </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
             </div>
 
             {/* 4th item */}
@@ -223,44 +183,9 @@ function FeaturesBlocks() {
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
                 Firmware Analysis
               </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
             </div>
 
             {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-[#475569]"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeLinecap="square" strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      d="M20.571 20.571h13.714v17.143H20.571z"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M38.858 26.993l6.397 1.73-4.473 16.549-13.24-3.58"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Automotive Security
-              </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
@@ -297,16 +222,43 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+              <h4 className="text-xl font-bold  text-center p-3 leading-snug tracking-tight ">
                 Micro-Architectural Attacks
               </h4>
-              <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet,
-              </p>
+            </div>
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-[#475569]"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeLinecap="square" strokeWidth="2">
+                    <path
+                      className="stroke-current text-white"
+                      d="M20.571 20.571h13.714v17.143H20.571z"
+                    />
+                    <path
+                      className="stroke-current text-blue-300"
+                      d="M38.858 26.993l6.397 1.73-4.473 16.549-13.24-3.58"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Automotive Security
+              </h4>
             </div>
           </div>
         </div>
       </div>
+
       <div className=" mb-32 text-center">
         <a
           href="/research"
@@ -322,18 +274,13 @@ function FeaturesBlocks() {
           data-aos="fade-right"
         >
           <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8  text-gray-200">
-            <h3 className="h3 mb-3">
+            <h3 className="h3 mb-16">
               Here's what recruiters had to say about us
             </h3>
-            <p className="text-md text-white">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa.
-            </p>
           </div>
-          <div className=" bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
+          <div className=" bg-white flex items-center text-lg  p-5 rounded border transition duration-300 ease-in-out mb-8 ">
             <div>
-              <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
+              <div className="font-bold leading-snug tracking-tight mb-1  text-[#111827]">
                 Freshers from Amrita are better than experienced people I have
                 hired from outside. 8 out of 12 people in the security team are
                 Amrita alumni.
@@ -346,7 +293,7 @@ function FeaturesBlocks() {
               <MdPeople />
             </div> */}
           </div>
-          <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
+          <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-8 ">
             <div>
               <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                 I can vouch for their superior technical skills, dedication and
@@ -360,7 +307,7 @@ function FeaturesBlocks() {
               <MdPeople />
             </div> */}
           </div>
-          <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ">
+          <div className="bg-white flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-8 ">
             <div>
               <div className="font-bold leading-snug tracking-tight mb-1 text-[#111827]">
                 I am very happy with their performance, especially level of
